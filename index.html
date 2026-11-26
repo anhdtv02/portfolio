@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emma Dinh Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%234a332d%22/%3E%3Ctext x=%2232%22 y=%2243%22 font-family=%22Arial%22 font-weight=%22800%22 font-size=%2228%22 fill=%22%23b2d4dd%22 text-anchor=%22middle%22%3EED%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Emma Dinh (Dinh Thuy Van Anh) — Brand & Product Marketing: new product development, go-to-market strategy and brand positioning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mocha:#4a332d;
+  --mocha-2:#5c4239;
+  --glacier:#b2d4dd;
+  --glacier-soft:#cfe4ea;
+  --paper:#f1eee8;
+  --porcelain:#fffef6;
+  --ink:#2b211d;
+  --muted:#6f625c;
+  --line:#4a332d;
+  --radius:22px;
+  --mottle:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='640'><filter id='m'><feTurbulence type='fractalNoise' baseFrequency='.006' numOctaves='5' seed='7' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .42  0 0 0 0 .34  0 0 0 .3 -.14'/></filter><rect width='100%' height='100%' filter='url(%23m)'/></svg>");
+  --specks:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='360' height='360'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='11' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42  0 0 0 0 .35  0 0 0 0 .27  0 0 0 16 -13.1'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>");
+  --fibres:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='520'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.9 .045' numOctaves='1' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .42  0 0 0 0 .32  0 0 0 12 -8.9'/></filter><rect width='100%' height='100%' filter='url(%23f)' transform='rotate(28 260 260)'/></svg>");
+  --shadow:0 10px 30px -12px rgba(74,51,45,.28), 0 2px 6px rgba(74,51,45,.08);
+  --noise:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.29  0 0 0 0 0.2  0 0 0 0 0.17  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',system-ui,sans-serif;
+  color:var(--ink);
+  background-color:var(--paper);
+  background-image:var(--fibres),var(--specks),var(--noise),var(--mottle);
+  line-height:1.6;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.display{font-family:'Outfit','Poppins',system-ui,-apple-system,sans-serif;letter-spacing:-.01em;line-height:1.05}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+
+/* ---------- pills ---------- */
+.pill{
+  display:inline-flex;align-items:center;justify-content:center;
+  border:1.5px solid currentColor;border-radius:999px;
+  padding:.42em 1.3em;font-size:.86rem;font-weight:500;white-space:nowrap;
+  text-decoration:none;transition:background .2s,color .2s;
+}
+.pill.sm{font-size:.62rem;padding:.2em .9em;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+a.pill:hover{background:var(--mocha);color:var(--porcelain);border-color:var(--mocha)}
+
+/* ---------- nav ---------- */
+nav.top{
+  position:fixed;inset:14px 0 auto;z-index:50;pointer-events:none;
+}
+nav.top .bar{
+  pointer-events:auto;
+  width:min(1180px,100% - 32px);margin-inline:auto;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  background:rgba(255,254,246,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-radius:999px;padding:8px 10px 8px 20px;box-shadow:var(--shadow);
+  transform:translateY(-130%);transition:transform .4s cubic-bezier(.2,.8,.2,1);
+}
+nav.top.show .bar{transform:none}
+nav.top .logo{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:800;font-size:1.1rem;text-decoration:none;color:var(--mocha)}
+nav.top ul{display:flex;gap:4px;list-style:none}
+nav.top ul a{display:block;text-decoration:none;font-size:.82rem;font-weight:500;padding:7px 13px;border-radius:999px;color:var(--mocha)}
+nav.top ul a:hover,nav.top ul a.on{background:var(--mocha);color:var(--porcelain)}
+@media (max-width:860px){nav.top ul li.hide-sm{display:none}}
+@media (max-width:560px){nav.top ul{display:none}}
+
+/* ---------- slides ---------- */
+.slide{position:relative;overflow:hidden;padding:clamp(64px,9vw,120px) 0}
+.slide.blue{background:var(--glacier) var(--noise)}
+.slide.brown{background:var(--mocha) var(--noise);color:var(--porcelain)}
+.swirl{position:absolute;pointer-events:none;z-index:0;fill:none;stroke-linecap:round}
+.slide > .wrap{position:relative;z-index:1}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center}
+.hero .tag-top{color:var(--porcelain);opacity:.9;margin-bottom:22px}
+.hero h1{
+  font-size:clamp(3.4rem,13.5vw,10.5rem);font-weight:800;color:#eee6da;
+  letter-spacing:-.02em;
+  text-shadow:0 2px 0 rgba(0,0,0,.08);
+}
+.hero h1 .loop{display:inline-block;transform:translateY(.02em)}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px;color:var(--porcelain)}
+.hero .sub{margin-top:34px;color:#d9cfc4;font-size:clamp(.9rem,1.6vw,1.05rem);letter-spacing:.02em}
+.scroll-cue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);color:#d9cfc4;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;z-index:2}
+.scroll-cue::after{content:"";display:block;width:1.5px;height:38px;background:currentColor;margin:10px auto 0;animation:cue 1.8s ease-in-out infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- cards ---------- */
+.card{background:var(--porcelain);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px 26px}
+.card h3{font-size:1.2rem;font-weight:700;color:var(--mocha);margin-bottom:12px}
+.card .label{font-size:.75rem;color:var(--muted);margin-bottom:10px;display:block}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(28px,5vw,64px);align-items:center}
+.about h2{font-size:clamp(2.2rem,4.5vw,3.2rem);color:var(--mocha);font-weight:800;margin-bottom:6px}
+.about .lead{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-size:clamp(1.2rem,2.2vw,1.55rem);font-weight:600;color:var(--mocha);margin-bottom:18px;line-height:1.25}
+.about p{color:var(--ink);max-width:56ch}
+.about p + p{margin-top:12px}
+.about-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.about-cards .card.span{grid-column:1/-1}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tool{display:inline-flex;align-items:center;gap:6px;background:var(--mocha);color:var(--porcelain);border-radius:9px;padding:6px 10px;font-size:.78rem;font-weight:500}
+.dots{list-style:none;font-size:.88rem}
+.dots li{padding-left:14px;position:relative}
+.dots li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--mocha)}
+.contact-list{list-style:none;display:grid;gap:10px;font-size:.88rem}
+.contact-list a{display:flex;align-items:center;gap:10px;text-decoration:none;word-break:break-word}
+.contact-list a:hover{text-decoration:underline}
+.ico{flex:none;width:28px;height:28px;border-radius:8px;background:var(--mocha);color:var(--porcelain);display:grid;place-items:center}
+.ico svg{width:15px;height:15px}
+
+/* ---------- stats ---------- */
+.section-title{display:flex;align-items:flex-end;gap:16px;margin-bottom:34px;flex-wrap:wrap}
+.section-title h2{font-size:clamp(2rem,4.4vw,3rem);font-weight:800;color:var(--mocha)}
+.section-title p{color:var(--muted);max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat{padding:26px 26px 22px}
+.stat .num{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:800;font-size:clamp(2.2rem,4.4vw,3.2rem);color:var(--mocha);line-height:1}
+.stat .what{font-weight:600;margin:10px 0 4px;color:var(--ink)}
+.stat .where{font-size:.8rem;color:var(--muted)}
+
+/* ---------- chapter index ---------- */
+.index-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.index-item{text-decoration:none;color:var(--mocha);padding:8px 4px;border-radius:18px;transition:transform .25s}
+.index-item:hover{transform:translateY(-6px)}
+.index-item .n{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:900;font-size:clamp(3rem,8vw,6.2rem);line-height:.9;display:block}
+.index-item .t{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:700;font-size:clamp(1rem,1.8vw,1.45rem);display:block;margin-top:6px}
+
+/* ---------- chapter divider ---------- */
+.chapter{padding:clamp(80px,12vw,150px) 0}
+.chapter .wrap{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:36px}
+.chapter .big{position:relative}
+.chapter .big .n{
+  font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:900;font-size:clamp(9rem,24vw,19rem);line-height:.8;
+  color:#f4f0e8;display:block;letter-spacing:-.04em;text-shadow:0 6px 24px rgba(74,51,45,.08);
+}
+.chapter .big h2{
+  position:absolute;left:clamp(16px,4vw,48px);top:50%;transform:translateY(-50%);
+  font-size:clamp(2.6rem,7vw,5.6rem);font-weight:800;color:var(--mocha);
+}
+.chapter .list{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:320px;justify-self:end;width:100%;color:var(--mocha)}
+.chapter .list .pill{padding:.6em 1.2em}
+
+/* ---------- project ---------- */
+.project{padding:clamp(28px,5vw,56px) 0}
+.project .grid{display:grid;grid-template-columns:minmax(260px,.85fr) 2fr;gap:clamp(20px,3.5vw,44px);align-items:start}
+.project.flip .grid{grid-template-columns:2fr minmax(260px,.85fr)}
+.project.flip .info{order:2}
+.info h3{font-size:clamp(1.7rem,2.8vw,2.2rem);font-weight:800;color:var(--mocha)}
+.info .meta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 14px;color:var(--mocha)}
+.info h4{font-family:'Poppins',system-ui,sans-serif;font-size:.85rem;font-weight:600;color:var(--mocha);margin:14px 0 4px;letter-spacing:0}
+.info p,.info li{font-size:.88rem;color:var(--ink)}
+.info ul{list-style:none;display:grid;gap:5px}
+.info ul li{padding-left:14px;position:relative}
+.info ul li::before{content:"";position:absolute;left:0;top:.68em;width:5px;height:5px;border-radius:50%;background:var(--mocha)}
+.info .skills{display:flex;gap:6px;flex-wrap:wrap;margin-top:20px}
+.info .skills span{background:var(--mocha);color:var(--porcelain);border-radius:8px;font-size:.7rem;font-weight:600;padding:5px 9px}
+
+.board{display:grid;gap:14px;grid-template-columns:repeat(6,1fr)}
+.board > *{grid-column:span 6}
+.board .c3{grid-column:span 3}
+.board .c2{grid-column:span 2}
+.board .c4{grid-column:span 4}
+
+.visual{
+  position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  min-height:var(--h,320px);
+  background:var(--bg,var(--glacier)) var(--noise);
+  color:var(--fg,var(--mocha));
+  display:flex;flex-direction:column;justify-content:flex-end;padding:24px 26px;
+  isolation:isolate;
+}
+.visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.visual .ph-brand{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:800;font-size:clamp(2rem,4.4vw,3.6rem);line-height:.95;position:relative;z-index:1}
+.visual .ph-sub{font-size:.8rem;opacity:.85;margin-top:8px;position:relative;z-index:1}
+.visual .ph-note{position:absolute;top:16px;right:16px;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;border:1.2px dashed currentColor;border-radius:999px;padding:3px 10px;opacity:.6;z-index:1}
+.visual .deco{position:absolute;z-index:0;opacity:.5}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
+.kpi{padding:20px 20px 18px}
+.kpi .v{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:800;font-size:clamp(1.7rem,3vw,2.3rem);color:var(--mocha);line-height:1}
+.kpi .d{font-size:.78rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.kpi .up{display:inline-block;font-size:.7rem;font-weight:600;color:#2f7a5b;background:#dff0e7;border-radius:6px;padding:1px 6px;margin-left:4px;vertical-align:middle;font-family:'Poppins',system-ui,sans-serif}
+
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:f}
+.flow .step{background:var(--porcelain);border-radius:16px;padding:16px;box-shadow:var(--shadow);font-size:.8rem;position:relative}
+.flow .step b{display:block;font-family:'Outfit',system-ui,-apple-system,sans-serif;font-size:1rem;color:var(--mocha);margin-bottom:4px}
+.flow .step::before{counter-increment:f;content:"0" counter(f);font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:800;color:var(--glacier);font-size:1.6rem;line-height:1;display:block;margin-bottom:6px;text-shadow:1px 0 0 var(--mocha),-1px 0 0 var(--mocha),0 1px 0 var(--mocha),0 -1px 0 var(--mocha),.7px .7px 0 var(--mocha),-.7px .7px 0 var(--mocha),.7px -.7px 0 var(--mocha),-.7px -.7px 0 var(--mocha)}
+
+.rank{display:grid;gap:10px}
+.rank .r{display:flex;gap:14px;align-items:center;background:var(--porcelain);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow)}
+.rank .r .pos{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:900;font-size:1.8rem;color:var(--mocha);min-width:56px}
+.rank .r .kw{font-weight:600;font-size:.9rem}
+.rank .r .tt{font-size:.78rem;color:var(--muted)}
+
+.divider-space{height:clamp(20px,4vw,40px)}
+
+/* ---------- experience ---------- */
+.timeline{display:grid;gap:14px}
+.job{display:grid;grid-template-columns:170px 1fr;gap:24px;align-items:start}
+.job .when{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:700;color:var(--mocha);font-size:.95rem;padding-top:24px}
+.job .card h3{margin-bottom:2px}
+.job .co{font-size:.86rem;color:var(--muted);margin-bottom:10px}
+.job ul{list-style:none;display:grid;gap:5px;font-size:.86rem}
+.job ul li{padding-left:14px;position:relative}
+.job ul li::before{content:"";position:absolute;left:0;top:.68em;width:5px;height:5px;border-radius:50%;background:var(--mocha)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cert-row{display:grid;grid-template-columns:130px 1fr;gap:10px;font-size:.88rem;padding:7px 0;border-bottom:1px dashed rgba(74,51,45,.2)}
+.cert-row:last-child{border:0}
+.cert-row b{color:var(--mocha);font-weight:600}
+
+/* ---------- thanks ---------- */
+.thanks{text-align:center;min-height:80svh;display:grid;place-items:center}
+.thanks h2{font-size:clamp(3.6rem,12vw,9rem);font-weight:800;color:#eee6da}
+.thanks .k{font-family:'Outfit',system-ui,-apple-system,sans-serif;font-weight:700;font-size:1.3rem;margin:14px 0 26px;color:#f2ebe0}
+.thanks .links{display:flex;gap:12px 28px;justify-content:center;flex-wrap:wrap;font-size:.9rem}
+.thanks .links a{display:flex;gap:10px;align-items:center;text-decoration:none;color:#eee6da}
+.thanks .links a:hover{text-decoration:underline}
+.thanks .ico{background:#eee6da;color:var(--mocha)}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:34px;background:#eee6da;color:var(--mocha);font-weight:600;border-radius:999px;padding:12px 24px;text-decoration:none;font-size:.9rem}
+.btn:hover{background:var(--glacier)}
+footer{padding:22px 0;text-align:center;font-size:.75rem;color:#b9aca1;background:var(--mocha)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.scroll-cue::after{animation:none}html{scroll-behavior:auto}}
+
+
+/* ================= v2 content in v1 style ================= */
+.tbc{background:linear-gradient(transparent 58%,rgba(255,206,0,.42) 58%);cursor:help}
+.info p.res{font-weight:600;color:var(--mocha)}
+.info .go-ext{margin-top:18px;color:var(--mocha)}
+.note{font-size:.75rem;color:var(--muted);margin-top:-4px}
+.stack{display:grid;gap:14px;align-content:start}
+.board > .rv,.board > .stack{min-width:0}
+.visual.ar{min-height:0;aspect-ratio:var(--ar);padding:0}
+.shot{margin:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--porcelain)}
+.shot img{width:100%;height:auto}
+.shot.plan.dark{background:#141311}
+.figcap{display:flex;justify-content:space-between;gap:12px;font-size:.74rem;color:var(--muted);margin-top:-4px}
+.portraits{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:380px;margin-top:22px}
+.portraits img{aspect-ratio:3/4;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}
+.portraits img + img{object-position:50% 74%}
+/* browser frame */
+.browser{display:block;border-radius:16px;overflow:hidden;background:var(--porcelain);box-shadow:var(--shadow);text-decoration:none;color:inherit}
+.browser .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:var(--glacier-soft)}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:rgba(74,51,45,.3)}
+.browser .bar span{margin-left:8px;flex:1;min-width:0;background:var(--porcelain);border-radius:999px;font-size:.66rem;color:var(--muted);padding:3px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser img{width:100%;height:auto}
+a.browser:hover img{opacity:.92}
+/* crossian */
+.ads{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ads .shot img{aspect-ratio:4/5;object-fit:cover}
+.delta{display:grid;gap:14px;padding:20px 22px}
+.delta > div{display:grid;grid-template-columns:1fr auto auto;gap:4px 14px;align-items:baseline}
+.delta .k{font-size:.72rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.delta .v{font-family:'Outfit',system-ui,sans-serif;font-weight:700;color:var(--mocha)}
+.delta .v i{font-style:normal;color:var(--muted);margin:0 4px}
+.delta em{font-style:normal;font-size:.72rem;font-weight:600;color:#2f7a5b;background:#dff0e7;border-radius:6px;padding:1px 7px}
+.delta .bars{grid-column:1/-1;display:grid;gap:4px;margin-top:6px}
+.delta .bars s{display:block;height:16px;width:var(--w);border-radius:999px;background:var(--glacier);position:relative;text-decoration:none}
+.delta .bars s + s{background:var(--mocha)}
+.delta .bars u{position:absolute;left:10px;top:0;line-height:16px;font-size:.58rem;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;color:var(--mocha)}
+.delta .bars s + s u{color:var(--porcelain)}
+.deckbtn{background:transparent;cursor:pointer;font-family:inherit;color:var(--mocha);justify-self:start}
+.deckbtn i{font-style:normal;opacity:.6;margin-left:6px}
+.deckbtn:hover{background:var(--mocha);color:var(--porcelain)}
+/* video wall */
+.vwall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-content:start}
+.vid{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:var(--mocha);cursor:pointer;margin:0;box-shadow:var(--shadow)}
+.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vid figcaption{position:absolute;inset:auto 0 0;padding:26px 10px 9px;display:flex;justify-content:space-between;gap:6px;color:#fff;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:linear-gradient(180deg,transparent,rgba(0,0,0,.6));pointer-events:none}
+.vid .snd::before{content:"♪ tap for sound"}
+.vid.on .snd::before{content:"♪ sound on"}
+.vid.on{outline:3px solid var(--glacier);outline-offset:-3px}
+/* gtm */
+.markets{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.markets div{background:var(--porcelain);border-radius:16px;box-shadow:var(--shadow);padding:14px 14px 12px}
+.markets b{display:block;font-family:'Outfit',system-ui,sans-serif;font-weight:800;font-size:1.5rem;color:var(--mocha);line-height:1}
+.markets span{font-size:.72rem;color:var(--muted)}
+.markets .sum{background:var(--mocha)}.markets .sum b,.markets .sum span{color:var(--porcelain)}
+.kv4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kv{margin:0}
+.kv figcaption{font-size:.78rem;margin-top:8px;line-height:1.3}
+.kv figcaption b{display:block;color:var(--mocha)}
+.kv figcaption span{color:var(--muted);font-size:.72rem}
+/* "as published" strips */
+.proof{margin-top:clamp(22px,3vw,34px)}
+.proof-h{display:flex;align-items:center;gap:12px;margin-bottom:12px;color:var(--mocha);flex-wrap:wrap}
+.proof-h .src{font-size:.8rem;color:var(--muted)}
+.proof-h .hint{margin-left:auto;display:flex;gap:8px}
+.proof-h .hint button{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--mocha);background:transparent;color:var(--mocha);cursor:pointer;font:inherit}
+.proof-h .hint button:hover{background:var(--mocha);color:var(--porcelain)}
+.posts{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(228px,21vw,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 22px;scrollbar-width:thin;scrollbar-color:rgba(74,51,45,.3) transparent;overscroll-behavior-x:contain}
+.post{scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;color:#1c1e21;text-decoration:none;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s}
+.post:hover{transform:translateY(-4px)}
+.ph-h{display:flex;align-items:center;gap:8px;padding:11px 12px 7px}
+.av{width:28px;height:28px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font-size:.7rem;font-weight:800;flex:none}
+.who{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.who b{font-size:.74rem;font-weight:600}
+.who small{font-size:.62rem;color:#65676b}
+.go{margin-left:auto;font-size:.85rem;color:#65676b;opacity:0;transition:opacity .3s}
+.post:hover .go{opacity:1}
+.cap{font-size:.74rem;line-height:1.4;padding:0 12px;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;height:2.8em}
+.pm{position:relative;display:grid;gap:2px;background:#e4e6eb;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+.pm.l2v{grid-template-rows:minmax(0,1fr)}.pm.l2h{grid-template-columns:minmax(0,1fr)}
+.pm.lv .pi:first-child{grid-row:1/-1;grid-column:1}.pm.lv .pi:not(:first-child){grid-column:2}
+.pm.lh .pi:first-child{grid-column:1/-1}
+.pm.lg{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.pm.l5{grid-template-columns:repeat(6,minmax(0,1fr))}.pm.l5 .pi{grid-column:span 2}.pm.l5 .pi:nth-child(-n+2){grid-column:span 3}
+.pi{position:relative;overflow:hidden;background:#dfe1e5;min-height:0}
+.pi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pi.blank{background:linear-gradient(160deg,var(--mocha),#1d1c1a)}
+.more{position:absolute;inset:0;background:rgba(0,0,0,.45);color:#fff;display:grid;place-items:center;font-size:1.3rem;font-weight:600}
+.play{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);pointer-events:none;z-index:1}
+.play::after{content:"";position:absolute;left:18px;top:14px;border-style:solid;border-width:9px 0 9px 14px;border-color:transparent transparent transparent #fff}
+.pf{display:flex;flex-wrap:wrap;gap:3px 10px;padding:9px 12px 11px;font-size:.64rem;color:#65676b;border-top:1px solid #eef0f2;margin-top:auto}
+.pf b{color:#1c1e21}
+/* brand plans */
+.ps{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:10px}
+.ps figure{margin:0;position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);background:var(--porcelain)}
+.ps figure:first-child{grid-row:1/3;aspect-ratio:auto}
+.ps.one{grid-template-columns:minmax(0,1fr)}.ps.one figure{aspect-ratio:1200/527;grid-row:auto}
+.ps img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ps figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,254,246,.92);color:var(--mocha);font-size:.62rem;font-weight:600;letter-spacing:.04em;border-radius:999px;padding:3px 10px}
+/* fanpage */
+.fp{display:grid;grid-template-columns:1.52fr 1.71fr;gap:12px;align-items:start}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-content:start}
+.feed .tile{display:block;aspect-ratio:1;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.feed .tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.feed .tile:hover img{transform:scale(1.05)}
+/* creator reels */
+.kreels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.kr{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:var(--mocha);color:#fff;text-decoration:none;display:block;box-shadow:var(--shadow)}
+.kr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kr:hover img{transform:scale(1.05)}
+.kr::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.75))}
+.kr .play{top:42%}
+.kr .t{position:absolute;left:12px;right:12px;bottom:11px;z-index:1;font-size:.62rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;line-height:1.35}
+.kr .t b{font-family:'Outfit',system-ui,sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-.01em;text-transform:none}
+.kr .t small{display:block;font-size:.68rem;font-weight:400;letter-spacing:0;text-transform:none;opacity:.88;margin-top:3px}
+/* social posts groups */
+.sp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px}
+.sp-h{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;color:var(--mocha)}
+.sp-h b{font-family:'Outfit',system-ui,sans-serif;font-size:1.05rem}
+.sp-posts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:stretch}
+.sp-posts .pm.l1[style*="1.7"]{aspect-ratio:1!important}
+.vwall.six{grid-template-columns:repeat(3,minmax(0,1fr))}
+.info .flow{grid-template-columns:1fr 1fr}
+/* PR + script cards */
+.tcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tcard{display:flex;flex-direction:column;padding:0 22px 22px;overflow:hidden}
+.tcard .thumb{position:relative;display:block;aspect-ratio:16/9;margin:0 -22px 16px;overflow:hidden;background:var(--mocha)}
+.tcard .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tcard:hover .thumb img{transform:scale(1.04)}
+.tcard .hl{font-size:.86rem;font-style:italic;margin-bottom:8px}
+.tcard .sm{font-size:.84rem;color:var(--ink)}
+.tcard .lnk{margin-top:auto;padding-top:14px;font-size:.8rem;font-weight:600;color:var(--mocha)}
+a.r{text-decoration:none;color:inherit;transition:transform .25s}
+a.r:hover{transform:translateX(4px)}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(43,33,29,.95);color:var(--porcelain);display:grid;grid-template-rows:auto 1fr;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.lb.open{opacity:1;visibility:visible}
+.lb header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;font-size:.75rem;font-weight:600}
+.lb header .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb button{background:transparent;border:1.5px solid rgba(255,254,246,.5);border-radius:999px;color:inherit;font:inherit;cursor:pointer}
+.lb button:hover{background:var(--porcelain);color:var(--mocha)}
+.lb .x{padding:7px 14px}
+.lb figure{display:grid;place-items:center;padding:0 clamp(12px,6vw,72px) 24px;min-height:0;margin:0}
+.lb figure img{max-width:100%;max-height:calc(100svh - 96px);object-fit:contain;border-radius:12px}
+.lb .nav{position:absolute;top:50%;width:46px;height:46px;transform:translateY(-50%)}
+.lb .prev{left:12px}.lb .next{right:12px}
+@media (max-width:980px){
+  .sp-grid,.tcards{grid-template-columns:1fr}
+  .tcards{max-width:560px}
+}
+@media (max-width:640px){
+  .ads,.markets,.kv4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fp,.feed{grid-template-columns:1fr}
+  .feed{grid-template-columns:repeat(3,1fr)}
+  .vwall,.vwall.six{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kreels{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:44%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+  .kr{scroll-snap-align:start}
+  .sp-posts{gap:8px}
+  .ps{grid-template-columns:1fr 1fr}.ps figure:first-child{grid-row:auto;grid-column:1/-1;aspect-ratio:16/9}
+  .proof-h .hint{display:none}
+  .figcap{flex-direction:column;gap:2px}
+  .vid .snd::before{content:"♪"}.vid.on .snd::before{content:"♪ on"}
+  .delta > div{grid-template-columns:1fr auto}.delta .v{grid-column:1/-1;grid-row:2}
+}
+
+
+/* ---------- round 2 ---------- */
+.about-cards .card{padding:22px 22px}
+.about-cards .card h3{font-size:1.08rem}
+.about-cards .dots,.about-cards .contact-list{font-size:.84rem}
+.about-cards .tool{font-size:.72rem}
+.info p,.info li{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+.posts .pm,.sp-posts .pm{aspect-ratio:1/1!important}
+.pf{flex-wrap:nowrap;white-space:nowrap;overflow:hidden;gap:3px 8px}
+.rank .r .th{width:92px;aspect-ratio:16/10;object-fit:cover;border-radius:10px;flex:none}
+.rank .r .pos{min-width:44px}
+.rank.c3{align-content:start}
+.rank.c3 .r{gap:12px;padding:12px 14px}
+.rank.c3 .r .th{width:78px;aspect-ratio:1}
+.rank.c3 .r .pos{font-size:1.5rem;min-width:40px}
+.thanks .pre{font-family:'Outfit',system-ui,sans-serif;font-weight:600;font-size:clamp(1.25rem,2.6vw,1.9rem);line-height:1.3;color:#f2ebe0;margin-bottom:18px}
+.thanks h2{margin-bottom:28px}
+@media (max-width:640px){.rank .r .th{width:64px}.sp-posts .pf span:not(:first-child){display:none}}
+
+
+/* ---------- round 3: equal-height rows ---------- */
+.stack.fill{grid-auto-rows:1fr}
+.stack.fill > .visual.ar{aspect-ratio:auto;height:100%}
+.mediarow{display:grid;grid-template-columns:2.3fr 1fr 1fr 1fr;gap:10px;align-items:stretch}
+.mediarow .browser{display:flex;flex-direction:column;min-width:0}
+.mediarow .browser img{flex:1;min-height:0;height:100%;object-fit:contain;background:#fff}
+.markets.two{grid-template-columns:1fr 1fr;grid-auto-rows:1fr;align-content:stretch}
+.markets.two div{padding:10px 14px}
+.pair{display:grid;grid-template-columns:1.753fr 1.547fr;gap:14px;align-items:start}
+.pair .shot figcaption,.stack .shot figcaption{font-size:.72rem;color:var(--muted);padding:8px 12px;background:var(--porcelain)}
+.rank.c3{display:grid;grid-auto-rows:1fr}
+.rank.c3 .r{height:100%}
+@media (max-width:640px){
+  .mediarow{grid-template-columns:1fr 1fr 1fr}
+  .mediarow .browser{grid-column:1/-1}
+  .pair{grid-template-columns:1fr}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .about-grid,.chapter .wrap,.project .grid,.project.flip .grid{grid-template-columns:1fr}
+  .project.flip .info{order:0}
+  .chapter .list{justify-self:start;max-width:none;flex-direction:row;flex-wrap:wrap}
+  .stats{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:14.5px}
+  .about-cards,.two{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .index-grid{grid-template-columns:repeat(3,1fr);row-gap:22px}
+  .board .c3,.board .c2,.board .c4{grid-column:span 6}
+  .job{grid-template-columns:1fr;gap:4px}
+  .job .when{padding-top:0}
+  .cert-row{grid-template-columns:1fr;gap:0}
+  .chapter .big h2{left:8px}
+}
+</style>
+</head>
+<body>
+
+<nav class="top" id="nav">
+  <div class="bar">
+    <a href="#top" class="logo">Emma Dinh</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#highlights" class="hide-sm-x">Highlights</a></li>
+      <li><a href="#work">Work</a></li>
+      <li class="hide-sm"><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="slide brown hero" id="top">
+  <svg class="swirl" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" style="inset:0;width:100%;height:100%;opacity:.08" aria-hidden="true">
+    <path d="M-80 640 C 180 420, 360 820, 600 560 S 980 160, 1280 380" stroke="#b2d4dd" stroke-width="120"/>
+  </svg>
+  <div class="wrap">
+    <span class="pill tag-top">Brand &amp; Product Marketing</span>
+    <h1 class="display">PORTF<span class="loop">O</span>LIO</h1>
+    <div class="row">
+      <span class="pill">2022–2026 selected work</span>
+      <span class="pill">Emma Dinh · Đinh Thuỵ Vân Anh</span>
+    </div>
+    <p class="sub">New Product Development &nbsp;|&nbsp; Go-to-Market Strategy &nbsp;|&nbsp; Brand Positioning</p>
+  </div>
+  <a class="scroll-cue" href="#about">Scroll</a>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="slide about" id="about">
+  <svg class="swirl" viewBox="0 0 600 600" style="left:-180px;bottom:-200px;width:620px;height:620px" aria-hidden="true">
+    <path d="M60 560 C 60 300, 300 300, 300 140 S 520 -20, 560 160" stroke="#b2d4dd" stroke-width="110"/>
+  </svg>
+  <svg class="swirl" viewBox="0 0 400 400" style="right:-120px;top:-110px;width:380px;height:380px" aria-hidden="true">
+    <circle cx="200" cy="200" r="120" stroke="#b2d4dd" stroke-width="90"/>
+  </svg>
+  <div class="wrap about-grid">
+    <div class="rv">
+      <h2>Hello!</h2>
+      <p class="lead">I'm Emma. A creative thinker and a strategic do-er.</p>
+      <p>I'm a Brand &amp; Product Marketing professional with <b>4+ years across in-house and agency environments</b>, specializing in product development, brand positioning and go-to-market execution.</p>
+      <p>I combine consumer and market insights, creative strategy, commercial performance analysis and cross-functional project management to turn brand opportunities into measurable business outcomes, from the first research deck to a product that sells.</p>
+      <div class="portraits"><img src="assets/img/portrait-1.jpg" alt="Portrait of Emma Dinh" decoding="async"><img src="assets/img/portrait-2.jpg" alt="Emma Dinh in an áo dài at a temple gate" decoding="async"></div>
+    </div>
+    <div class="about-cards rv">
+      <div class="card">
+        <h3>Brand &amp; Product</h3>
+        <ul class="dots">
+          <li>Brand positioning &amp; messaging</li>
+          <li>New product development</li>
+          <li>Consumer &amp; market insights</li>
+          <li>Integrated marketing comms</li>
+          <li>Creative strategy &amp; briefing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Commercial</h3>
+        <ul class="dots">
+          <li>Go-to-market planning</li>
+          <li>Product launch management</li>
+          <li>Performance analysis</li>
+          <li>Cross-functional PM</li>
+          <li>Agency &amp; KOL/KOC mgmt</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <div class="tools">
+          <span class="tool">Meta Ads</span><span class="tool">Power BI</span><span class="tool">SQL</span>
+          <span class="tool">Higgsfield AI</span><span class="tool">RankMath</span><span class="tool">Canva</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li><a href="mailto:anhdtv.02@gmail.com"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>anhdtv.02@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/dinhthuyvananh" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z"/></svg></span>dinhthuyvananh</a></li>
+          <li><a href="tel:+84775668123"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>+84 775 668 123</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HIGHLIGHTS ============ -->
+<section class="slide blue" id="highlights">
+  <div class="wrap">
+    <div class="section-title rv">
+      <h2>Career highlights</h2>
+      <p>Six numbers that sum up my work, from co-owning a product's P&amp;L to leading launches across seven markets.</p>
+    </div>
+    <div class="stats">
+      <div class="card stat rv"><div class="num">$288K+</div><div class="what">Gross revenue, Aug–Nov 2026</div><div class="where">6,901 units sold · product co-owner at Crossian</div></div>
+      <div class="card stat rv"><div class="num">+60%</div><div class="what">ROAS, from 1.5 to 2.4</div><div class="where">Funnel analysis &amp; pre-MOQ testing · Crossian</div></div>
+      <div class="card stat rv"><div class="num">7</div><div class="what">Markets for 4 product launches</div><div class="where">3 agencies · 8–10 KOLs/month/market · Slimcase</div></div>
+      <div class="card stat rv"><div class="num">83M</div><div class="what">Fanpage views, 7.9M reach</div><div class="where">+33.5% reach · 1.2M link clicks · Slimcase</div></div>
+      <div class="card stat rv"><div class="num">120%</div><div class="what">Launch KPI in Thailand</div><div class="where">108% in Vietnam · ROAS 4.0 · Slimcase Classic 2</div></div>
+      <div class="card stat rv"><div class="num">4</div><div class="what">Winning agency pitches</div><div class="where">First six months · Honda, Country Ma'am, Charm Resort</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDEX ============ -->
+<section class="slide" id="work">
+  <svg class="swirl" viewBox="0 0 1200 500" preserveAspectRatio="none" style="inset:0;width:100%;height:100%" aria-hidden="true">
+    <path d="M-50 420 C 250 420, 300 80, 600 80 S 950 420, 1250 300" stroke="#b2d4dd" stroke-width="130"/>
+  </svg>
+  <div class="wrap">
+    <div class="section-title rv"><h2>Featured work</h2></div>
+    <div class="index-grid rv">
+      <a class="index-item" href="#ch1"><span class="n">01</span><span class="t">Product &amp; GTM</span></a>
+      <a class="index-item" href="#ch2"><span class="n">02</span><span class="t">Launch campaigns</span></a>
+      <a class="index-item" href="#ch3"><span class="n">03</span><span class="t">Brand planning</span></a>
+      <a class="index-item" href="#ch4"><span class="n">04</span><span class="t">Social media</span></a>
+      <a class="index-item" href="#ch5"><span class="n">05</span><span class="t">Content creation</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="slide blue chapter" id="ch1">
+  <div class="wrap">
+    <div class="big rv"><span class="n">01</span><h2>PRODUCT<br>&amp; GTM</h2></div>
+    <div class="list rv">
+      <a class="pill" href="#crossian">Crossian · Launch to scale</a>
+      <a class="pill" href="#crossian-ads">Crossian · Run the numbers</a>
+      <a class="pill" href="#gtm">Slimcase multi-market GTM</a>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="crossian">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Launch to scale</h3>
+      <div class="meta"><span class="pill sm">Product &amp; GTM</span><span class="pill sm">Crossian</span><span class="pill sm">2026</span></div>
+      <h4>Challenge</h4>
+      <p>Take a new product from zero to profitable scale, and decide quickly which creatives and offers deserve budget before committing to a minimum order (MOQ).</p>
+      <h4>Insight</h4>
+      <p>Buyers decide in the first seconds of an ad: a clear, visual proof of the product's main benefit converts better than brand claims, so the USP has to be shown, not told.</p>
+      <h4>Strategy</h4>
+      <ul>
+            <li>Built positioning, USPs and GTM messaging from consumer insight and competitor analysis (FAB &amp; DPA).</li>
+            <li>Scripted and generated AI video ads (Higgsfield) to test many angles fast and cheaply.</li>
+            <li>Ran pre-MOQ tests on CTR, CPM, CVR and ROAS, then made scale / kill / iterate calls.</li>
+          </ul>
+      <h4>Result</h4>
+      <p class="res">$288.23K gross revenue and 6,901 units sold from 1 Aug to 25 Nov 2026; ROAS up 60%, from 1.5 to 2.4.</p>
+    </div>
+    <div class="board">
+      <div class="ads rv"><figure class="shot"><img src="assets/img/crossian-1.jpg" alt="RevenaShape ad creative 1" loading="lazy" decoding="async"></figure><figure class="shot"><img src="assets/img/crossian-2.jpg" alt="RevenaShape ad creative 2" loading="lazy" decoding="async"></figure><figure class="shot"><img src="assets/img/crossian-3.jpg" alt="RevenaShape ad creative 3" loading="lazy" decoding="async"></figure><figure class="shot"><img src="assets/img/crossian-4.jpg" alt="RevenaShape ad creative 4" loading="lazy" decoding="async"></figure></div>
+      <div class="browser rv"><span class="bar"><i></i><i></i><i></i><span>Content performance dashboard · RevenaShape 3.0</span></span><img src="assets/img/crossian-dash-3.jpg" alt="Content performance dashboard for RevenaShape 3.0: weekly revenue, orders, AOV and margin, with revenue by ads source" loading="lazy" decoding="async"></div>
+      <div class="figcap"><span>Weekly revenue, orders &amp; margin · revenue by ads source</span><span>25 Sep – 25 Nov 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="project flip" id="crossian-ads">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Run the numbers</h3>
+      <div class="meta"><span class="pill sm">Performance &amp; P&amp;L</span><span class="pill sm">Crossian</span><span class="pill sm">2026</span></div>
+      <h4>Challenge</h4>
+      <p>Keep the product profitable as spend grows, with Merchandising, Fulfillment, Creative and Ads all moving at different speeds.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>Weekly and monthly performance reviews that turn results into a profit plan: pricing and upsell-by-quantity offers, product mix, promotions and forecast.</li>
+          <li>Analysed colour and size distribution to direct page and ad creative optimisation.</li>
+          <li>One launch timeline and content plan shared by every team.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Grew product sales from $47K a month in August to $119.4K in November (+154%), while marketing spend rose from $30.2K to $56.4K (+87%). ROAS from 1.5 to 2.4.</p>
+      <div class="skills"><span>P&amp;L</span><span>Pricing &amp; offers</span><span>Size &amp; colour analysis</span><span>Forecast</span></div>
+    </div>
+    <div class="board">
+      <div class="kpis rv"><div class="card kpi"><div class="v">$288.23K</div><div class="d">Gross revenue</div></div><div class="card kpi"><div class="v">6,901</div><div class="d">Units sold</div></div><div class="card kpi"><div class="v">1.5 → 2.4</div><div class="d">ROAS <span class="up">+60%</span></div></div></div>
+      <p class="note rv">Timeline: 1 Aug – 25 Nov 2026 (latest data)</p>
+      <div class="delta card rv" aria-label="Monthly sales and marketing spend, August vs November 2026">
+        <div><span class="k">Product sales / month</span><span class="v">$47K <i>→</i> <b>$119.4K</b></span><em>+154%</em><span class="bars"><s style="--w:39.4%"><u>Aug</u></s><s style="--w:100%"><u>Nov</u></s></span></div>
+        <div><span class="k">Marketing spend / month</span><span class="v">$30.2K <i>→</i> <b>$56.4K</b></span><em>+87%</em><span class="bars"><s style="--w:25.3%"><u>Aug</u></s><s style="--w:47.2%"><u>Nov</u></s></span></div>
+      </div>
+      <div class="flow rv"><div class="step"><b>Research</b>Market, competitors, consumer insight</div><div class="step"><b>Test</b>Sourcing, sampling, pre-MOQ ads</div><div class="step"><b>Launch</b>USPs, offers, AI video ads</div><div class="step"><b>Scale</b>P&amp;L review, scale or kill</div></div>
+      <div class="mediarow rv"><div class="browser dash"><span class="bar"><i></i><i></i><i></i><span>Product insights · size &amp; colour</span></span><img src="assets/img/crossian-dash-4.jpg" alt="Product insights dashboard: size and colour distribution for RevenaShape 3.0 against a benchmark" loading="lazy" decoding="async"></div><figure class="vid" tabindex="0" role="button" aria-label="Play RevenaShape ad with sound"><video src="assets/media/crossian-ad-1.mp4" poster="assets/img/crossian-ad-1.jpg" muted loop playsinline preload="none"></video><figcaption><span>RevenaShape</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play RevenaShape ad with sound"><video src="assets/media/crossian-ad-2.mp4" poster="assets/img/crossian-ad-2.jpg" muted loop playsinline preload="none"></video><figcaption><span>RevenaShape</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play RevenaShape ad with sound"><video src="assets/media/crossian-ad-3.mp4" poster="assets/img/crossian-ad-3.jpg" muted loop playsinline preload="none"></video><figcaption><span>RevenaShape</span><span class="snd"></span></figcaption></figure></div>
+      <button class="pill deckbtn rv" data-g="crossiandata">Performance tracking <i></i></button>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="gtm">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>One brand, seven markets</h3>
+      <div class="meta"><span class="pill sm">Multi-market GTM</span><span class="pill sm">Slimcase</span><span class="pill sm">2024–2025</span></div>
+      <h4>Challenge</h4>
+      <p>Launch 4 new products across 7 markets with one consistent brand voice, on fixed timelines and budgets.</p>
+      <h4>Insight</h4>
+      <p>What sells in Vietnam doesn't translate word for word. Consistency has to live in the positioning; the messaging, creators and channels have to go local.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>GTM plans aligning positioning, messaging, creative assets and launch timelines.</li>
+          <li>Consumer research and surveys with the brand team to localise messaging.</li>
+          <li>One project timeline with stakeholder alignment, risk tracking and deliverables.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Launching Sport X, Unique 3 and Slimcase Rex in 2025 accounted for 20% of total sales and drove Slimcase to become the #1 phone case brand in Vietnam, with Slimcase Unique as the best-seller.</p>
+    </div>
+    <div class="board">
+      <div class="kpis rv"><div class="card kpi"><div class="v">#1</div><div class="d">Phone case brand in Vietnam · Shopee Mall sales, 2025</div></div><div class="card kpi"><div class="v">20%</div><div class="d">Of total sales from the Sport X, Unique 3 &amp; Rex launches</div></div><div class="card kpi"><div class="v">Unique</div><div class="d">The brand's best-seller</div></div></div>
+      <div class="c3 stack"><div class="browser rv"><span class="bar"><i></i><i></i><i></i><span>Shopee Mall · shop ranking 2025</span></span><img src="assets/img/shopee-rank.jpg" alt="Shopee Mall shop ranking 2025, Mobile &amp; Gadgets accessories: Slimcase Việt Nam ranked top 1 by sales" loading="lazy" decoding="async"></div></div>
+      <div class="markets two rv c3"><div><b>NA</b><span>North America</span></div><div><b>VN</b><span>Vietnam</span></div><div><b>TH</b><span>Thailand</span></div><div><b>SG</b><span>Singapore</span></div><div><b>ID</b><span>Indonesia</span></div><div><b>PH</b><span>Philippines</span></div><div><b>MY</b><span>Malaysia</span></div><div class="sum"><b>4×7</b><span>Launches × markets</span></div></div>
+      <div class="kv4 rv"><figure class="kv"><div class="visual ar" style="--ar:2/3"><img src="assets/img/uni4-1.jpg" alt="Unique 3 key visual" loading="lazy" decoding="async"></div><figcaption><b>Unique 3</b><span>2024</span></figcaption></figure><figure class="kv"><div class="visual ar" style="--ar:2/3"><img src="assets/img/spo5-1.jpg" alt="Sport X key visual" loading="lazy" decoding="async"></div><figcaption><b>Sport X</b><span>Jun 2025</span></figcaption></figure><figure class="kv"><div class="visual ar" style="--ar:2/3"><img src="assets/img/uni1-1.jpg" alt="Unique · iPhone 17 key visual" loading="lazy" decoding="async"></div><figcaption><b>Unique · iPhone 17</b><span>Sep 2025</span></figcaption></figure><figure class="kv"><div class="visual ar" style="--ar:2/3"><img src="assets/img/rex1-1.jpg" alt="Rex key visual" loading="lazy" decoding="async"></div><figcaption><b>Rex</b><span>Sep 2025</span></figcaption></figure></div>
+      <div class="figcap"><span>Launch key visuals, 2024–2025</span><span>Slimcase</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide blue chapter" id="ch2">
+  <div class="wrap">
+    <div class="big rv"><span class="n">02</span><h2>LAUNCH<br>CAMPAIGNS</h2></div>
+    <div class="list rv">
+      <a class="pill" href="#rex">Slimcase Rex</a>
+      <a class="pill" href="#unique3">Slimcase Unique &amp; Sport X</a>
+      <a class="pill" href="#beyono">Beyono Sky</a>
+      <a class="pill" href="#wave">Honda Wave Alpha</a>
+      <a class="pill" href="#vario">Honda Vario 160</a>
+      <a class="pill" href="#coco">CoCo Dining “Ra Khơi”</a>
+    </div>
+  </div>
+</section>
+
+<section class="project flip" id="rex">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Slimcase Rex</h3>
+      <div class="meta"><span class="pill sm">Product launch</span><span class="pill sm">iPhone 15 &amp; 16 Pro Max</span><span class="pill sm">Sep–Nov 2025</span></div>
+      <h4>Challenge</h4>
+      <p>Launch Rex, Slimcase's Kevlar case for iPhone 15 Pro Max and 16 Pro Max, and make a premium, technical product feel desirable, not just tough.</p>
+      <h4>Insight</h4>
+      <p>People who buy a rugged case don't want to look rugged. They want protection that disappears into a slim, premium feel, and an identity to match.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>Developed the product concept (visual and message) across markets and platforms: website, Meta and e-commerce; led the team's content and creative production.</li>
+          <li>Positioned Rex as “Crafted for the Champion”: strength as a mindset.</li>
+          <li>Four proof points: original Kevlar (5× stronger than steel), Slimpact™ 2.0 with an aluminium frame (3 m drop), a Dark Metallic finish and a slim pocket fit.</li>
+          <li>Rolled out over three months, from the launch key visual to outdoor and everyday content.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Launch post: 331 reactions, 116 comments and 8 shares.</p>
+      <a class="pill go-ext" href="https://slimcase.vn/products/op-lung-slimcase-rex-danh-cho-iphone-16-pro-max" target="_blank" rel="noopener">Product page ↗</a>
+    </div>
+    <div class="board">
+      <div class="visual rv c4 ar" style="--ar:2/3"><img src="assets/img/rex1-1.jpg" alt="Slimcase Rex key visual: Crafted for the Champion" loading="lazy" decoding="async"></div>
+      <div class="c2 stack fill"><div class="visual rv ar" style="--ar:1"><img src="assets/img/rex1-2.jpg" alt="Kevlar texture detail" loading="lazy" decoding="async"></div><div class="visual rv ar" style="--ar:1"><img src="assets/img/rex2-3.jpg" alt="Rex outdoors" loading="lazy" decoding="async"></div><div class="visual rv ar" style="--ar:1"><img src="assets/img/rex3-3.jpg" alt="Rex on a bicycle" loading="lazy" decoding="async"></div></div>
+    </div>
+  </div>
+  <div class="wrap proof rv">
+    <div class="proof-h"><span class="pill sm">Published post</span><span class="src">Slimcase Vietnam · Facebook · 4 posts</span><span class="hint"><button type="button" data-dir="-1" aria-label="Scroll left">←</button><button type="button" data-dir="1" aria-label="Scroll right">→</button></span></div>
+    <div class="posts"><a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid0269Fgsm5V6HEsFZ8ehMPJXV7cwa94NXoMEh8zNcbSkG6nFZ97TToQvzhuJSs7c69ql" target="_blank" rel="noopener" aria-label="Post on Facebook: SLIMCASE REX – Crafted for the Champion"><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>6 Sep 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">SLIMCASE REX – Crafted for the Champion</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/rex1-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex1-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex1-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex1-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>331</b> reactions</span><span>116 comments</span><span>8 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02iw13YijFR4EU1C9kqqpMzKdU7jpbwHhoAVJoHBogwkP46bd5FoXeD7t4mLS3TXAPl" target="_blank" rel="noopener" aria-label="Post on Facebook: Có người chọn an toàn, nhưng cũng có người khao khát chạm tới những chân trời mới."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>10 Sep 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Có người chọn an toàn, nhưng cũng có người khao khát chạm tới những chân trời mới.</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.666fr 0.333fr;aspect-ratio:1.000"><span class="pi"><img src="assets/img/rex2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex2-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex2-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex2-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>160</b> reactions</span><span>23 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid028TURn5Hbu1YrEyBm32ZNtpkjsFDci7ZZjgo2UDCQJ7bHi1PBDrKJ4Ha5FfqXq1gJl" target="_blank" rel="noopener" aria-label="Post on Facebook: Đừng để nỗi lo rơi vỡ điện thoại che mờ những khoảnh khắc đáng nhớ."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>12 Sep 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Đừng để nỗi lo rơi vỡ điện thoại che mờ những khoảnh khắc đáng nhớ.</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/rex3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>76</b> reactions</span><span>17 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid0TDCyysM3tbZvjeCtgFcjxeR4GYs7qhf67eLXNTyKgBPYQagGdYy6C56Z5tvatGYRl" target="_blank" rel="noopener" aria-label="Post on Facebook: Ốp lưng nặng nề, cồng kềnh là điều tối kỵ của những người theo đuổi hiệu suất."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>23 Oct 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Ốp lưng nặng nề, cồng kềnh là điều tối kỵ của những người theo đuổi hiệu suất.</span><span class="pm lv" style="grid-template-columns:0.666fr 0.334fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/rex5-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex5-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex5-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/rex5-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>11</b> reactions</span><span>12 comments</span><span>1 shares</span></span></a></div>
+  </div>
+</section>
+
+<section class="project" id="unique3">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Unique &amp; Sport X</h3>
+      <div class="meta"><span class="pill sm">Launch campaigns</span><span class="pill sm">Slimcase</span><span class="pill sm">2024–2025</span></div>
+      <h4>Challenge</h4>
+      <p>Make each launch stand out in a crowded phone case feed: the Unique series (Unique 3 in 2024, Unique for iPhone 17 in 2025) and Sport X, a sportier line with stronger protection.</p>
+      <h4>Insight</h4>
+      <p>Phone cases are bought on how they look in the hand. Showing the product in motion and in real life beats flat product shots.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li><b>Unique:</b> started the photoshoot concept and a 3D motion film, planned and ran the multi-platform rollout, coordinated production.</li>
+          <li><b>Sport X:</b> helped shape the concept, proposed the tagline “Không ngại va chạm” and the content plan.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Unique 3 was a major contributor to the brand's highest profit of 2024. The 2025 Unique launch post drew 1.3K reactions and 1.3K comments; the Sport X launch reached 125% of its pre-order KPI.</p>
+    </div>
+    <div class="board">
+      <div class="kpis rv"><div class="card kpi"><div class="v">12.1M</div><div class="d">Views <span class="up">+25.2%</span></div></div><div class="card kpi"><div class="v">1.8M</div><div class="d">Reach <span class="up">+48.5%</span></div></div><div class="card kpi"><div class="v">13K</div><div class="d">Interactions <span class="up">+14.7%</span></div></div></div>
+      <div class="visual rv c2 ar" style="--ar:1"><img src="assets/img/uni1-1.jpg" alt="Slimcase Unique key visual" loading="lazy" decoding="async"></div>
+      <div class="visual rv c2 ar" style="--ar:1"><img src="assets/img/uni2-3.jpg" alt="Unique lifestyle shot" loading="lazy" decoding="async"></div>
+      <div class="visual rv c2 ar" style="--ar:1"><img src="assets/img/uni4-2.jpg" alt="Unique 3 studio shoot" loading="lazy" decoding="async"></div>
+      <div class="visual rv c2 ar" style="--ar:1"><img src="assets/img/spo1-1.jpg" alt="Sport X key visual" loading="lazy" decoding="async"></div>
+      <div class="visual rv c2 ar" style="--ar:1"><img src="assets/img/spo1-3.jpg" alt="Sport X studio shoot" loading="lazy" decoding="async"></div>
+      <div class="visual rv c2 ar" style="--ar:1"><img src="assets/img/spo2-2.jpg" alt="Sport X street style" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+  <div class="wrap proof rv">
+    <div class="proof-h"><span class="pill sm">Published post</span><span class="src">Slimcase Vietnam · Facebook · 11 posts</span><span class="hint"><button type="button" data-dir="-1" aria-label="Scroll left">←</button><button type="button" data-dir="1" aria-label="Scroll right">→</button></span></div>
+    <div class="posts"><a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid0J5eWm8dtE8aExCXTMTEQUp9cdZPmn595MayLwwtoyQ8eCQMUwxri512cRo5JaK96l" target="_blank" rel="noopener" aria-label="Post on Facebook: Chính thức ra mắt Slimcase Unique dành cho iPhone 17 Pro &amp; Pro Max"><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>18 Sep 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Chính thức ra mắt Slimcase Unique dành cho iPhone 17 Pro &amp; Pro Max</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/uni1-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni1-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni1-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni1-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>1.3K</b> reactions</span><span>1.3K comments</span><span>43 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02jDAUmUnnyYkhLQLPdsPB4Mk7D8HmL3DnCqpcp3x3hXVhsPjhkmXBapuyGZYnoPgHl" target="_blank" rel="noopener" aria-label="Post on Facebook: Mỗi chi tiết là một dấu ấn."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>7 Nov 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Mỗi chi tiết là một dấu ấn.</span><span class="pm lg" style="aspect-ratio:1"><span class="pi"><img src="assets/img/uni3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>834</b> reactions</span><span>342 comments</span><span>21 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid0h5kq7RXhSh3Pb5PAGU9Fwr5VWsDWjEHjRB3GTVgTgWbwvDPEhi6jNzsjamWkrRwl" target="_blank" rel="noopener" aria-label="Post on Facebook: SLIMCASE SPORT X – Không ngại va chạm. Chinh phục mọi giới hạn!"><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>24 Jun 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">SLIMCASE SPORT X – Không ngại va chạm. Chinh phục mọi giới hạn!</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/spo5-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo5-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo5-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo5-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>462</b> reactions</span><span>265 comments</span><span>19 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02PVBuKmag9MApbPjHtrEKjhdyyKpgH5VnXFZ8Na6QPrTmgFdYcN84AXzsMhvMC2jZl" target="_blank" rel="noopener" aria-label="Post on Facebook: Từ những cuộc gặp gỡ quan trọng đến những khoảnh khắc tự do dạo phố."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>16 Oct 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Từ những cuộc gặp gỡ quan trọng đến những khoảnh khắc tự do dạo phố.</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.666fr 0.333fr;aspect-ratio:1.000"><span class="pi"><img src="assets/img/uni2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni2-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni2-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni2-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>326</b> reactions</span><span>76 comments</span><span>5 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid0oqH1tiqsEednj4kj4tCU5xKVXPEEVkPRWdBS7wwJU6tS88Jxa9erVNRzK5uCWYsyl" target="_blank" rel="noopener" aria-label="Post on Facebook: Dù bạn đi bộ, leo núi hay xuống phố, Slimcase Sport X luôn sẵn sàng."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>23 Jul 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Dù bạn đi bộ, leo núi hay xuống phố, Slimcase Sport X luôn sẵn sàng.</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/spo2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo2-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo2-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo2-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>163</b> reactions</span><span>78 comments</span><span>7 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid03548VadaguHDQvZh4T4fgay618oytWjVCn846bqyPNM93FRFaGnC4WRFuUDvh6sb9l" target="_blank" rel="noopener" aria-label="Post on Facebook: Mọi thử thách, mọi trải nghiệm – Slimcase Sport X luôn đồng hành."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>22 Aug 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Mọi thử thách, mọi trải nghiệm – Slimcase Sport X luôn đồng hành.</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/spo3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>114</b> reactions</span><span>33 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02eBaE7bHe4vYGgyrRnwg4sEGofjyajnDigccdRQkeZPQ8NCyj23ZCoxU3oKKmGk2hl" target="_blank" rel="noopener" aria-label="Post on Facebook: Tập nặng? Rơi mạnh? Có Slimcase Sport X lo!"><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>18 Jul 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Tập nặng? Rơi mạnh? Có Slimcase Sport X lo!</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/spo1-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo1-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo1-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo1-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>110</b> reactions</span><span>46 comments</span><span>5 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid04wub8kzxgt96K8zQDX1GBUPGGNKXcyxigpvSVwQXrBhnB2tJv6XSfVi4qEUq7SNMl" target="_blank" rel="noopener" aria-label="Post on Facebook: Chạm đến tinh tế, bộc lộ chất riêng."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>14 Jun 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Chạm đến tinh tế, bộc lộ chất riêng.</span><span class="pm lv" style="grid-template-columns:0.664fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:0.997"><span class="pi"><img src="assets/img/uni4-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni4-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni4-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni4-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>114</b> reactions</span><span>34 comments</span><span>2 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02Jc7h6TJqou9bzbvrchVPxRXxVeDur5b4tMvfJDeAkQXXpQDFJJUPhnnj4ghDbiwyl" target="_blank" rel="noopener" aria-label="Post on Facebook: Unique 3: Yên tâm trải nghiệm, tự tin độc bản."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>10 Jun 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Unique 3: Yên tâm trải nghiệm, tự tin độc bản.</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.666fr 0.333fr;aspect-ratio:1.000"><span class="pi"><img src="assets/img/uni6-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni6-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni6-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni6-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>49</b> reactions</span><span>63 comments</span><span>1 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02GKeMBrTKY92kwVaTr2xfVJ1qa736JNrvTHTUNaQJLbEbfAqDh7L4YvZh86Zy8Zkjl" target="_blank" rel="noopener" aria-label="Post on Facebook: Khi cuộc sống trở nên phức tạp, hãy đơn giản hóa mọi thứ."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>19 Aug 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Khi cuộc sống trở nên phức tạp, hãy đơn giản hóa mọi thứ.</span><span class="pm lv" style="grid-template-columns:0.664fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:0.997"><span class="pi"><img src="assets/img/uni5-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni5-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni5-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni5-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>44</b> reactions</span><span>2 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02zjpZdMNLvKhyRViEqo15utr3wFjR1oumW8Vq5BcAoPqMZ1DoQXXCPc74i1AHtEeal" target="_blank" rel="noopener" aria-label="Post on Facebook: Phong độ không chỉ nằm ở body, mà còn ở chiếc ốp bạn chọn."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>14 Oct 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Phong độ không chỉ nằm ở body, mà còn ở chiếc ốp bạn chọn.</span><span class="pm lv" style="grid-template-columns:0.800fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.133"><span class="pi"><img src="assets/img/spo4-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo4-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo4-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/spo4-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>21</b> reactions</span><span>22 comments</span></span></a></div>
+  </div>
+</section>
+
+<section class="project flip" id="beyono">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Beyono Sky</h3>
+      <div class="meta"><span class="pill sm">Product launch</span><span class="pill sm">Volleyball footwear</span><span class="pill sm">Feb–May 2024</span></div>
+      <h4>Challenge</h4>
+      <p>Launch Sky, Beyono's new volleyball shoe, and earn credibility next to global sport brands on a local brand's budget.</p>
+      <h4>Insight</h4>
+      <p>Players trust players. A national athlete's real journey makes a local shoe believable faster than any spec sheet.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>Wrote the concept and execution plan for the launch.</li>
+          <li>Built the story around volleyball athlete Quản Trọng Nghĩa: a “coming soon” teaser for 13.05, then a documentary-style reel.</li>
+          <li>Five shooting concepts and moodboards for the campaign photos; feature posts that turn the tech into on-court benefits.</li>
+          <li>Kept the page alive around the launch with Orca colourway and Beyono team stories.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Athlete reel: 381 reactions; Sky White launch post: 254 reactions.</p>
+    </div>
+    <div class="board">
+      <div class="visual rv c4 ar" style="--ar:2/3"><img src="assets/img/sky3-1.jpg" alt="Beyono Sky White key visual" loading="lazy" decoding="async"></div>
+      <div class="c2 stack fill"><div class="visual rv ar" style="--ar:1"><img src="assets/img/sky4-2.jpg" alt="Beyono Sky outsole feature" loading="lazy" decoding="async"></div><div class="visual rv ar" style="--ar:1"><img src="assets/img/orca2-2.jpg" alt="Beyono Orca Green key visual" loading="lazy" decoding="async"></div><div class="visual rv ar" style="--ar:1"><img src="assets/img/ppl1-3.jpg" alt="Beyono team at work" loading="lazy" decoding="async"></div></div>
+    </div>
+  </div>
+  <div class="wrap proof rv">
+    <div class="proof-h"><span class="pill sm">Published post</span><span class="src">Beyono Việt Nam · Facebook · 6 posts</span><span class="hint"><button type="button" data-dir="-1" aria-label="Scroll left">←</button><button type="button" data-dir="1" aria-label="Scroll right">→</button></span></div>
+    <div class="posts"><a class="post" href="https://www.facebook.com/reel/464326709451370" target="_blank" rel="noopener" aria-label="Reel on Facebook: [Coming soon 13.05] Beyono × VĐV Quản Trọng Nghĩa – một “bầu trời” khí chất sắp lộ diện"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>May 2024 · Facebook reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">[Coming soon 13.05] Beyono × VĐV Quản Trọng Nghĩa – một “bầu trời” khí chất sắp lộ diện</span><span class="pm l1" style="aspect-ratio:1.780"><span class="pi"><img src="assets/img/sky1-1.jpg" style="object-position:22% 50%" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span><b>154</b> reactions</span><span>10 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/reel/358283180580629" target="_blank" rel="noopener" aria-label="Reel on Facebook: Quản Trọng Nghĩa × Beyono: đam mê mãnh liệt, khát khao truyền cảm hứng"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>May 2024 · Facebook reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Quản Trọng Nghĩa × Beyono: đam mê mãnh liệt, khát khao truyền cảm hứng</span><span class="pm l1" style="aspect-ratio:0.800"><span class="pi"><img src="assets/img/sky2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span><b>381</b> reactions</span><span>13 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/BeyonobrandVietNam/posts/pfbid0xevgLDmzeT4MaaSn6y4w73kXj63iri35qk2Ch7oVr3Kk8qMiTnEMhnaMizkeXULXl" target="_blank" rel="noopener" aria-label="Post on Facebook: SKY WHITE – Khơi dậy đam mê, tự tin quyết đấu"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>16 May 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">SKY WHITE – Khơi dậy đam mê, tự tin quyết đấu</span><span class="pm lv" style="grid-template-columns:0.670fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.003"><span class="pi"><img src="assets/img/sky3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>254</b> reactions</span><span>18 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/BeyonobrandVietNam/posts/pfbid02bQhzgJCiRQUXwjUZ9gHE38C1RgaSC67AN38sqmGAgozB8iLL3HmXkXT8RDrNeVkGl" target="_blank" rel="noopener" aria-label="Post on Facebook: BEYONO SKY: Tính năng độc quyền, toả sáng độc nhất"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>23 May 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">BEYONO SKY: Tính năng độc quyền, toả sáng độc nhất</span><span class="pm lv" style="grid-template-columns:0.670fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.003"><span class="pi"><img src="assets/img/sky4-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky4-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky4-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky4-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>38</b> reactions</span><span>9 comments</span></span></a>
+<a class="post" href="https://www.facebook.com/BeyonobrandVietNam/posts/pfbid0soAUhLZTTFJtHikTG4MJ1Te3N3YZB7ehwdmTBh9Wwx67zqDP1He4htik7fYfhxPul" target="_blank" rel="noopener" aria-label="Post on Facebook: BEYONO TEAM – Nỗ lực để tốt hơn mỗi ngày"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>25 May 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">BEYONO TEAM – Nỗ lực để tốt hơn mỗi ngày</span><span class="pm l5" style="grid-template-rows:0.500fr 0.222fr;aspect-ratio:1.386"><span class="pi"><img src="assets/img/ppl1-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/ppl1-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/ppl1-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/ppl1-4.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/ppl1-5.jpg" alt="" loading="lazy" decoding="async"><span class="more">+14</span></span></span><span class="pf"><span><b>46</b> reactions</span><span>3 comments</span><span>11 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/BeyonobrandVietNam/posts/pfbid02H3ULoUX173Vtezxeb12ZJoNVuzWzszHeeECbVzQX4KmazoZ3VNH9Qgfbw9jtXgqrl" target="_blank" rel="noopener" aria-label="Post on Facebook: ORCA GREEN – Bật nhẹ tênh, chuyền ăn ý"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>23 Feb 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">ORCA GREEN – Bật nhẹ tênh, chuyền ăn ý</span><span class="pm lv" style="grid-template-columns:0.670fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.003"><span class="pi"><img src="assets/img/orca2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/orca2-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/orca2-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/orca2-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>31</b> reactions</span><span>10 comments</span><span>1 shares</span></span></a></div>
+  </div>
+</section>
+
+<section class="project" id="wave">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Honda Wave Alpha</h3>
+      <div class="meta"><span class="pill sm">Launch campaign</span><span class="pill sm">Golden Coin Digital</span><span class="pill sm">2023</span></div>
+      <h4>Challenge</h4>
+      <p>Win the pitch for the new Honda Wave Alpha launch and its classic special edition, then make the campaign perform on social with Gen Z.</p>
+      <h4>Insight</h4>
+      <p>For everyday riders, a motorbike is a reliable partner in daily life, not a status symbol, so the story should live in real, everyday moments.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>Researched market trends, competitors and the Gen Z audience.</li>
+          <li>Turned insight into a “modern retro” concept and key messages for the special edition.</li>
+          <li>Built the campaign framework, content pillars, the detailed social plan and demo creative posts.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Winning pitch: the brand ran the social content as proposed. Over 100% of committed KPIs; the classic edition post reached 10.1K reactions and 497 comments.</p>
+    </div>
+    <div class="board">
+      <figure class="shot rv plan" style=""><img src="assets/img/plan-wave.jpg" alt="Honda Wave Alpha special edition proposal: content roadmap and selected pages" loading="lazy" decoding="async"></figure>
+      <div class="figcap"><span>Special edition proposal · content roadmap &amp; selected pages</span><span>Golden Coin Digital · 2023</span></div>
+    </div>
+  </div>
+  <div class="wrap proof rv">
+    <div class="proof-h"><span class="pill sm">Published post</span><span class="src">Honda Việt Nam · Facebook · 8 posts</span><span class="hint"><button type="button" data-dir="-1" aria-label="Scroll left">←</button><button type="button" data-dir="1" aria-label="Scroll right">→</button></span></div>
+    <div class="posts"><a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0CQVGzHsA7yhVNb37T1NdLBQ7thH42gY6KXCUoN1TaY8vii8rV7HQYytXPW6Qz3P9l" target="_blank" rel="noopener" aria-label="Post on Facebook: Wave Alpha phiên bản cổ điển hoàn toàn mới: ngược dòng thời gian về với chiếc xe số huyền thoại"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>29 Sep 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Wave Alpha phiên bản cổ điển hoàn toàn mới: ngược dòng thời gian về với chiếc xe số huyền thoại</span><span class="pm l1" style="aspect-ratio:1.000"><span class="pi"><img src="assets/img/wav8-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>10,109</b> reactions</span><span>497 comments</span><span>127 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0XdR1UZbRgef7jzYFHWANTHzv6rn3bw9jn1xTnu3GCpv3StdWpGDKp5o1TtFehbewl" target="_blank" rel="noopener" aria-label="Post on Facebook: Wave Alpha 2024 ra mắt phiên bản mới: tem cực chiến, gu cực chất"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>10 Jul 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Wave Alpha 2024 ra mắt phiên bản mới: tem cực chiến, gu cực chất</span><span class="pm l1" style="aspect-ratio:1.000"><span class="pi"><img src="assets/img/wav6-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>8,065</b> reactions</span><span>206 comments</span><span>109 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0pZKeqWmzpU7o7tZS4G1fMVD789rDRoLMmvLb3nZ4daJ5JPyKCRykQWBXUqj3C586l" target="_blank" rel="noopener" aria-label="Post on Facebook: Một công đôi việc: Honda Wave Alpha siêu tiết kiệm, siêu bền bỉ"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>3 Sep 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Một công đôi việc: Honda Wave Alpha siêu tiết kiệm, siêu bền bỉ</span><span class="pm l1" style="aspect-ratio:1.251"><span class="pi"><img src="assets/img/wav1-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>2.6K</b> reactions</span><span>100 comments</span><span>52 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0YJWd5t9eCcbNPMQAePzY8o9qtS2J3VpRKxGpA1PAuUAspo29RBhEmzYjNtKAb6Gpl" target="_blank" rel="noopener" aria-label="Post on Facebook: Wave Alpha – kinh điển bền bỉ, ngại gì hao xăng"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>22 Aug 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Wave Alpha – kinh điển bền bỉ, ngại gì hao xăng</span><span class="pm l1" style="aspect-ratio:1.251"><span class="pi"><img src="assets/img/wav5-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>2.2K</b> reactions</span><span>113 comments</span><span>66 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0wLhR8kyJePCe1sPc1dLdzxsLQxyLhEr2Neh7zGWf6Y15AXtZxjFZXjRRPYZn4x3Dl" target="_blank" rel="noopener" aria-label="Post on Facebook: Thông báo! Bạn có hẹn vi vu phố xá cùng Wave Alpha"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>29 Aug 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Thông báo! Bạn có hẹn vi vu phố xá cùng Wave Alpha</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.667fr 0.254fr;aspect-ratio:1.086"><span class="pi"><img src="assets/img/wav7-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav7-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav7-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav7-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>816</b> reactions</span><span>113 comments</span><span>53 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid02UZcsNAM52YZvCPN8zwtKf2saVZ3xafDfjpah2XCGKRCuD1TNdPgw1jGWbrRMbuZyl" target="_blank" rel="noopener" aria-label="Post on Facebook: À lôi! Đây là Wave Alpha chất"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>12 Aug 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">À lôi! Đây là Wave Alpha chất</span><span class="pm lh" style="grid-template-columns:repeat(2,1fr);grid-template-rows:0.500fr 0.500fr;aspect-ratio:1.000"><span class="pi"><img src="assets/img/wav2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav2-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav2-3.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>517</b> reactions</span><span>92 comments</span><span>111 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0cynjyJupGjBvEqemwBt8uGMj9YVGymC866TW1PS9njtbSrZn4pt4UyEGhwNoFLoYl" target="_blank" rel="noopener" aria-label="Post on Facebook: Chơi có đội, lái Wave Alpha có hội!"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>15 Sep 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Chơi có đội, lái Wave Alpha có hội!</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.500fr 0.300fr;aspect-ratio:1.250"><span class="pi"><img src="assets/img/wav3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>447</b> reactions</span><span>98 comments</span><span>77 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid02ayb7CSyT48BNnJonER5xiNwMjPrUVDL1wxEYodLNuqkJnDfYAoSYes3JCB9VoADSl" target="_blank" rel="noopener" aria-label="Post on Facebook: Back to school, lái Wave Alpha cực cool!"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>16 Aug 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Back to school, lái Wave Alpha cực cool!</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.667fr 0.254fr;aspect-ratio:1.086"><span class="pi"><img src="assets/img/wav4-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav4-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav4-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/wav4-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>300</b> reactions</span><span>35 comments</span><span>51 shares</span></span></a></div>
+  </div>
+</section>
+
+<section class="project flip" id="vario">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Honda Vario 160</h3>
+      <div class="meta"><span class="pill sm">Launch campaign</span><span class="pill sm">× HIEUTHUHAI</span><span class="pill sm">Golden Coin Digital</span><span class="pill sm">2022–2023</span></div>
+      <h4>Challenge</h4>
+      <p>Launch the Honda Vario 160 across three stages: pre-launch, launch and post-launch.</p>
+      <h4>Insight</h4>
+      <p>Young urban buyers follow artists more than ads. The right ambassador opens the conversation that brand posts can't.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>Researched the market and proposed a 3-stage digital framework: rumour, teasing, launch.</li>
+          <li>Proposed HIEUTHUHAI as brand ambassador.</li>
+          <li>Planned fanpage and third-party activity (communities, KOLs, news), minigames, PR and event promotion.</li>
+        </ul>
+      <h4>Result</h4>
+      <p class="res">Pitch won and executed. The ambassador reel drew 10K reactions and 991 comments; the photo minigame 5.1K reactions and 700 shares.</p>
+    </div>
+    <div class="board">
+      <figure class="shot rv plan dark" style=""><img src="assets/img/plan-vario.jpg" alt="Honda Vario 160 launch proposal: all twelve pages" loading="lazy" decoding="async"></figure>
+      <div class="figcap"><span>Vario 160 launch proposal · every page</span><span>Golden Coin Digital · 2022</span></div>
+    </div>
+  </div>
+  <div class="wrap proof rv">
+    <div class="proof-h"><span class="pill sm">Published post</span><span class="src">Honda Việt Nam · Facebook · 7 posts</span><span class="hint"><button type="button" data-dir="-1" aria-label="Scroll left">←</button><button type="button" data-dir="1" aria-label="Scroll right">→</button></span></div>
+    <div class="posts"><a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0VnVpGv4xyMYSdrRbS5n8fNsZ1vfqxdC1VZs875kcjZsTbSJn4dX8RF1eAE4vjXCRl" target="_blank" rel="noopener" aria-label="Post on Facebook: Ra mắt Vario 160 – Đặc quyền kiêu hãnh"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>22 Dec 2022 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Ra mắt Vario 160 – Đặc quyền kiêu hãnh</span><span class="pm l1" style="aspect-ratio:1.000"><span class="pi"><img src="assets/img/var1-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>1.1K</b> reactions</span><span>256 comments</span><span>309 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/reel/1290146594914580" target="_blank" rel="noopener" aria-label="Reel on Facebook: HIEUTHUHAI bảo rằng nay anh ấy đã khác, vì…?"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>Dec 2022 · Facebook reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">HIEUTHUHAI bảo rằng nay anh ấy đã khác, vì…?</span><span class="pm l1" style="aspect-ratio:1.780"><span class="pi"><img src="assets/img/var0-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span><b>10K</b> reactions</span><span>991 comments</span><span>299 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0325P9E9k3AhF1pCd2G8VR2DTNTrbVqtJ1VcKFvCnkH2jcTs8S2aYqikBXdFF2tDzl" target="_blank" rel="noopener" aria-label="Video on Facebook: [Minigame] Thử chất kiêu hãnh, ghi dấu đặc quyền"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>5 Jan 2023 · Facebook video</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">[Minigame] Thử chất kiêu hãnh, ghi dấu đặc quyền</span><span class="pm l1" style="aspect-ratio:1.000"><span class="pi"><img src="assets/img/var6-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span><b>5.1K</b> reactions</span><span>818 comments</span><span>700 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid02n9rqXV5drbM6C3rWUnKcgUCri15uFccNMourJvCww8PbXm9bWgvyTtysZpQhqVNrl" target="_blank" rel="noopener" aria-label="Post on Facebook: Động cơ uy mãnh – kiêu hãnh dẫn đầu"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>21 Aug 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Động cơ uy mãnh – kiêu hãnh dẫn đầu</span><span class="pm l1" style="aspect-ratio:1.000"><span class="pi"><img src="assets/img/var2-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>4,664</b> reactions</span><span>48 comments</span><span>39 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0ZbsEexZEcr38eaMFKPYKLFj3U2X3tgLJZd3m7EqpweA3RsT1geSibrT4PjVKu8qKl" target="_blank" rel="noopener" aria-label="Post on Facebook: “Flex” thật kiêu hãnh, “flex” không cần lời"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>28 Aug 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">“Flex” thật kiêu hãnh, “flex” không cần lời</span><span class="pm lv" style="grid-template-columns:0.497fr 0.500fr;grid-template-rows:repeat(2,1fr);aspect-ratio:0.997"><span class="pi"><img src="assets/img/var4-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var4-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var4-3.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>1,505</b> reactions</span><span>43 comments</span><span>58 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid02R4Ge22fpF4jarYuonG4QeWX1WtproLnHVthjiLHgfD77jCRx5fTinHw55qDFTMLfl" target="_blank" rel="noopener" aria-label="Post on Facebook: Vừa mới mở bán vào 30/12, HIEUTHUHAI đã đến HEAD &amp; sắm ngay…"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>30 Dec 2022 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Vừa mới mở bán vào 30/12, HIEUTHUHAI đã đến HEAD &amp; sắm ngay…</span><span class="pm lh" style="grid-template-columns:repeat(3,1fr);grid-template-rows:0.664fr 0.333fr;aspect-ratio:1.003"><span class="pi"><img src="assets/img/var3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>591</b> reactions</span><span>41 comments</span><span>437 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0Fk1TKRFoC8uP1GQ3GGkFSJ9KdfgPqtPp7uTR622DCXR7WJhPUho4BtYHqS89id4dl" target="_blank" rel="noopener" aria-label="Post on Facebook: 2 bước bật chất kiêu hãnh ngày Valentine từ Ngô Hải Nam!"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>13 Feb 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">2 bước bật chất kiêu hãnh ngày Valentine từ Ngô Hải Nam!</span><span class="pm lv" style="grid-template-columns:0.666fr 0.312fr;grid-template-rows:repeat(3,1fr);aspect-ratio:0.978"><span class="pi"><img src="assets/img/var5-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var5-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var5-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/var5-4.jpg" alt="" loading="lazy" decoding="async"><span class="more">+2</span></span></span><span class="pf"><span><b>285</b> reactions</span><span>179 comments</span><span>97 shares</span></span></a></div>
+  </div>
+</section>
+
+<section class="project" id="coco">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>CoCo Dining “Ra Khơi”</h3>
+      <div class="meta"><span class="pill sm">F&amp;B · Menu launch</span><span class="pill sm">Sailing Off</span><span class="pill sm">2024</span></div>
+      <h4>Challenge</h4>
+      <p>Launch a new tasting menu for CoCo Complex (Michelin-selected CoCo Dining, CoCo Grill and CoCo Bar) and keep its premium positioning.</p>
+      <h4>Insight</h4>
+      <p>At this level, diners pay for the story behind each ingredient as much as for the dish.</p>
+      <h4>Strategy</h4>
+      <ul>
+          <li>Interviewed the chefs and researched ingredient origins, local and international.</li>
+          <li>Wrote a story concept for each course, from Departure to Catching Light, turning culinary ideas into brand narratives.</li>
+          <li>Supported the photoshoots and owned content across all three brands.</li>
+        </ul>
+          </div>
+    <div class="board">
+      <figure class="shot rv plan" style=""><img src="assets/img/plan-coco.jpg" alt="Ra Khơi (Sailing Off) menu launch plan: chapter introduction and story pages for each course" loading="lazy" decoding="async"></figure>
+      <div class="figcap"><span>“Ra Khơi” · Sailing Off menu launch plan</span><span>CoCo Dining · 2024</span></div>
+    </div>
+  </div>
+  <div class="wrap proof rv">
+    <div class="proof-h"><span class="pill sm">Published post</span><span class="src">@cocodining.sgn · Instagram reels</span><span class="hint"><button type="button" data-dir="-1" aria-label="Scroll left">←</button><button type="button" data-dir="1" aria-label="Scroll right">→</button></span></div>
+    <div class="posts"><a class="post" href="https://www.instagram.com/reel/C9ADfAQCkZR/" target="_blank" rel="noopener" aria-label="Reel on Instagram: CoCo Dining presents a nostalgic experience – “Ra Khơi” tasting menu"><span class="ph-h"><span class="av" style="--c:#1d1c1a">C</span><span class="who"><b>cocodining.sgn</b><small>4 Jul 2024 · Instagram reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">CoCo Dining presents a nostalgic experience – “Ra Khơi” tasting menu</span><span class="pm l1" style="aspect-ratio:0.800"><span class="pi"><img src="assets/img/coco4-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span>Reel on Instagram</span></span></a>
+<a class="post" href="https://www.instagram.com/reel/C81zv95NWiO/" target="_blank" rel="noopener" aria-label="Reel on Instagram: CoCo is evolving! New changes are coming in waves."><span class="ph-h"><span class="av" style="--c:#1d1c1a">C</span><span class="who"><b>cocodining.sgn</b><small>30 Jun 2024 · Instagram reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">CoCo is evolving! New changes are coming in waves.</span><span class="pm l1" style="aspect-ratio:0.800"><span class="pi"><img src="assets/img/coco3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span>Reel on Instagram</span></span></a>
+<a class="post" href="https://www.instagram.com/reel/C7HGf6qJJkp/" target="_blank" rel="noopener" aria-label="Reel on Instagram: The art of fermentation in culinary delights"><span class="ph-h"><span class="av" style="--c:#1d1c1a">C</span><span class="who"><b>cocodining.sgn</b><small>18 May 2024 · Instagram reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">The art of fermentation in culinary delights</span><span class="pm l1" style="aspect-ratio:0.800"><span class="pi"><img src="assets/img/coco2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span>Reel on Instagram</span></span></a>
+<a class="post" href="https://www.instagram.com/reel/C5vf5orhSjh/" target="_blank" rel="noopener" aria-label="Reel on Instagram: Filleting fish: a culinary art that demands focus and precision"><span class="ph-h"><span class="av" style="--c:#1d1c1a">C</span><span class="who"><b>cocodining.sgn</b><small>14 Apr 2024 · Instagram reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Filleting fish: a culinary art that demands focus and precision</span><span class="pm l1" style="aspect-ratio:0.800"><span class="pi"><img src="assets/img/coco1-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span>Reel on Instagram</span></span></a></div>
+  </div>
+</section>
+
+<section class="slide blue chapter" id="ch3">
+  <div class="wrap">
+    <div class="big rv"><span class="n">03</span><h2>BRAND<br>PLANNING</h2></div>
+    <div class="list rv">
+      <a class="pill" href="#hyggee">Hyggee</a>
+      <a class="pill" href="#dmp">DMP Agency</a>
+      <a class="pill" href="#bigbike">Honda BigBike</a>
+      <a class="pill" href="#countryma">Country Ma'am</a>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="hyggee">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Hyggee</h3>
+      <div class="meta"><span class="pill sm">Brand &amp; TikTok</span><span class="pill sm">2023</span></div>
+      <h4>Challenge</h4>
+      <p>Build a brand and a TikTok channel from scratch.</p>
+      <h4>Strategy</h4>
+      <p>Research, customer profiling, brand concept (“True beauty, true happiness”) and TikTok video plan.</p>
+      <h4>Result</h4>
+      <p class="res">Brand story and channel playbook delivered.</p>
+    </div>
+    <div class="board">
+      <div class="ps rv"><figure><img src="assets/slides/hyggee-05.jpg" alt="Brand concept &amp; key message" loading="lazy" decoding="async" draggable="false"><figcaption>Brand concept &amp; key message</figcaption></figure><figure><img src="assets/slides/hyggee-07.jpg" alt="Campaign roadmap" loading="lazy" decoding="async" draggable="false"><figcaption>Campaign roadmap</figcaption></figure><figure><img src="assets/slides/hyggee-04.jpg" alt="Target audience" loading="lazy" decoding="async" draggable="false"><figcaption>Target audience</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="project flip" id="dmp">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>DMP Agency</h3>
+      <div class="meta"><span class="pill sm">Branding · B2B</span><span class="pill sm">2024</span></div>
+      <h4>Challenge</h4>
+      <p>Give a B2B agency one consistent voice across digital channels.</p>
+      <h4>Strategy</h4>
+      <p>Owned the content guideline proposals and helped build the full brand book and digital guidelines.</p>
+      <h4>Result</h4>
+      <p class="res">Brand book and digital guideline completed.</p>
+    </div>
+    <div class="board">
+      <div class="ps one rv"><figure><img src="assets/img/dmp.jpg" alt="DMP brand book and digital guideline mockups" loading="lazy" decoding="async"><figcaption>Brand book &amp; digital guideline</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="bigbike">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Honda BigBike</h3>
+      <div class="meta"><span class="pill sm">Content strategy</span><span class="pill sm">Motorbike</span><span class="pill sm">2022</span></div>
+      <h4>Challenge</h4>
+      <p>Sharpen the Honda BigBike Vietnam fanpage against competitors.</p>
+      <h4>Strategy</h4>
+      <p>Fanpage and competitor audit; content framework, pillars, calendar and an inbox playbook.</p>
+      <h4>Result</h4>
+      <p class="res">Proposal won, approved and executed.</p>
+    </div>
+    <div class="board">
+      <div class="ps rv"><figure><img src="assets/slides/bigbike-04.jpg" alt="Content framework by phase" loading="lazy" decoding="async" draggable="false"><figcaption>Content framework by phase</figcaption></figure><figure><img src="assets/slides/bigbike-03.jpg" alt="Competitor audit" loading="lazy" decoding="async" draggable="false"><figcaption>Competitor audit</figcaption></figure><figure><img src="assets/slides/bigbike-07.jpg" alt="Content pillar: branding" loading="lazy" decoding="async" draggable="false"><figcaption>Content pillar: branding</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="project flip" id="countryma">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Country Ma'am</h3>
+      <div class="meta"><span class="pill sm">Integrated content</span><span class="pill sm">FMCG</span><span class="pill sm">2022</span></div>
+      <h4>Challenge</h4>
+      <p>Turn a brand plan into content across every channel.</p>
+      <h4>Strategy</h4>
+      <p>Content strategy, sound branding, an ASMR series; copy for web, social, blog, email, ads.</p>
+      <h4>Result</h4>
+      <p class="res">One of 4 winning pitches in my first six months.</p>
+    </div>
+    <div class="board">
+      <div class="ps rv"><figure><img src="assets/slides/countrymaam-research.jpg" alt="Market research: short video as the key source of brand discovery" loading="lazy" decoding="async" draggable="false"><figcaption>Market research</figcaption></figure><figure><img src="assets/slides/countrymaam-media.jpg" alt="Media approach: PR online for mega and hyper audiences" loading="lazy" decoding="async" draggable="false"><figcaption>Media approach · PR online</figcaption></figure><figure><img src="assets/slides/countrymaam-04.jpg" alt="Big idea and campaign roadmap" loading="lazy" decoding="async" draggable="false"><figcaption>Big idea &amp; campaign roadmap</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide blue chapter" id="ch4">
+  <div class="wrap">
+    <div class="big rv"><span class="n">04</span><h2>SOCIAL<br>MEDIA</h2></div>
+    <div class="list rv">
+      <a class="pill" href="#fanpage">Slimcase fanpage</a>
+      <a class="pill" href="#kol">KOL / KOC &amp; agencies</a>
+      <a class="pill" href="#shoot">Slimcase photoshoot</a>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="fanpage">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Fanpage Management</h3>
+      <div class="meta"><span class="pill sm">Social media</span><span class="pill sm">Slimcase · Facebook &amp; Instagram</span><span class="pill sm">2024–2025</span></div>
+      <h4>Challenge</h4>
+      <p>Lead the social presence of Vietnam's No.1 phone case brand and grow reach, engagement and traffic month after month.</p>
+      <h4>Insight</h4>
+      <p>Followers scroll past ads but stop for product-in-life visuals; every post needs one clear reason to click.</p>
+      <h4>Strategy</h4>
+      <p>Monthly angles balanced across pillars and formats; each idea taken from a 3D render to a 2D layout and a post; data-led planning and a clear CTA on every post.</p>
+      <h4>Result</h4>
+      <p class="res">83M views, 7.9M reach (+33.5%), 137.6K interactions (+26.1%), 1.2M link clicks (+46%).</p>
+      <div class="skills"><span>Content plan</span><span>Pillars</span><span>2D/3D briefs</span><span>Captions &amp; ad copy</span><span>KPI reports</span></div>
+    </div>
+    <div class="board">
+      <div class="kpis rv"><div class="card kpi"><div class="v">83M</div><div class="d">Total views</div></div><div class="card kpi"><div class="v">7.9M</div><div class="d">Reach <span class="up">+33.5%</span></div></div><div class="card kpi"><div class="v">137.6K</div><div class="d">Interactions <span class="up">+26.1%</span></div></div><div class="card kpi"><div class="v">1.2M</div><div class="d">Link clicks <span class="up">+46%</span></div></div></div>
+      <div class="feed rv c4">
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid02iw13YijFR4EU1C9kqqpMzKdU7jpbwHhoAVJoHBogwkP46bd5FoXeD7t4mLS3TXAPl" target="_blank" rel="noopener" aria-label="Rex post on Facebook"><img src="assets/img/rex2-2.jpg" alt="Rex post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid02PVBuKmag9MApbPjHtrEKjhdyyKpgH5VnXFZ8Na6QPrTmgFdYcN84AXzsMhvMC2jZl" target="_blank" rel="noopener" aria-label="Unique post on Facebook"><img src="assets/img/uni2-2.jpg" alt="Unique post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid02eBaE7bHe4vYGgyrRnwg4sEGofjyajnDigccdRQkeZPQ8NCyj23ZCoxU3oKKmGk2hl" target="_blank" rel="noopener" aria-label="Sport X post on Facebook"><img src="assets/img/spo1-2.jpg" alt="Sport X post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid04wub8kzxgt96K8zQDX1GBUPGGNKXcyxigpvSVwQXrBhnB2tJv6XSfVi4qEUq7SNMl" target="_blank" rel="noopener" aria-label="Unique 3 post on Facebook"><img src="assets/img/uni4-3.jpg" alt="Unique 3 post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid0f7XQ8AfZxStFe5Cy3DQvFpE13R1xikh4E8vGqxfC1TzxY6HS2RR6UGPdqNqRaSWXl" target="_blank" rel="noopener" aria-label="Rex post on Facebook"><img src="assets/img/rex4-2.jpg" alt="Rex post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid03548VadaguHDQvZh4T4fgay618oytWjVCn846bqyPNM93FRFaGnC4WRFuUDvh6sb9l" target="_blank" rel="noopener" aria-label="Sport X post on Facebook"><img src="assets/img/spo3-3.jpg" alt="Sport X post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid02jDAUmUnnyYkhLQLPdsPB4Mk7D8HmL3DnCqpcp3x3hXVhsPjhkmXBapuyGZYnoPgHl" target="_blank" rel="noopener" aria-label="Unique post on Facebook"><img src="assets/img/uni3-2.jpg" alt="Unique post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid028TURn5Hbu1YrEyBm32ZNtpkjsFDci7ZZjgo2UDCQJ7bHi1PBDrKJ4Ha5FfqXq1gJl" target="_blank" rel="noopener" aria-label="Rex post on Facebook"><img src="assets/img/rex3-2.jpg" alt="Rex post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+      <a class="tile" href="https://www.facebook.com/slimcase.vn/posts/pfbid02zjpZdMNLvKhyRViEqo15utr3wFjR1oumW8Vq5BcAoPqMZ1DoQXXCPc74i1AHtEeal" target="_blank" rel="noopener" aria-label="Sport X post on Facebook"><img src="assets/img/spo4-2.jpg" alt="Sport X post" loading="lazy" decoding="async" onerror="this.remove()"></a>
+    </div>
+      <div class="c2 stack"><figure class="shot rv " style=""><img src="assets/img/slimcase-insights-1.jpg" alt="Facebook insights: 83M views, 7.9M reach, 137.6K interactions, 1.2M link clicks" loading="lazy" decoding="async"></figure><figure class="shot rv " style=""><img src="assets/img/slimcase-insights-2.jpg" alt="Messaging insights: 42.3K contacts, 51.1K conversations started" loading="lazy" decoding="async"></figure><a class="browser rv" href="https://www.facebook.com/slimcase.vn" target="_blank" rel="noopener"><span class="bar"><i></i><i></i><i></i><span>facebook.com/slimcase.vn</span></span><img src="assets/img/fanpage-slimcase.jpg" alt="Slimcase Vietnam Facebook page, 59K followers" loading="lazy" decoding="async"></a></div>
+      <div class="figcap"><span>Meta Business Suite insights · Slimcase Vietnam</span><span>Timeline: 1 year, May 2024 – April 2025</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="project flip" id="kol">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Creators &amp; Agencies</h3>
+      <div class="meta"><span class="pill sm">KOL / KOC</span><span class="pill sm">3 agencies</span><span class="pill sm">7 markets</span></div>
+      <h4>Challenge</h4>
+      <p>Run 8–10 creator collaborations per month in every market, through 3 agencies (KOC booking, PR, production), on brand and on budget.</p>
+      <h4>Insight</h4>
+      <p>Creators sell best in their own voice; the brief should lock the message, not the script.</p>
+      <h4>Strategy</h4>
+      <p>Clear selection criteria; detailed briefs (content, visuals, posting time, links, hashtags); review of every draft before posting; trend tracking with creators.</p>
+      <h4>Result</h4>
+      <p class="res">Key visuals, product videos and quarterly photoshoots delivered within approved budgets.</p>
+      <div class="skills"><span>Selection</span><span>Briefs</span><span>Draft approval</span><span>Budget tracking</span></div>
+    </div>
+    <div class="board">
+      <div class="kreels rv">
+      <a class="kr" href="https://www.facebook.com/reel/1194262688982341" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Unique 3, from a top-10 world designer"><img src="assets/img/kr-8.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>7.7M</b> views<small>Unique 3 · “Từ nhà thiết kế Top 10 thế giới”</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/681298407867848" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Unique 3 · “Chuẩn vibe lịch lãm”"><img src="assets/img/kr-1.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>6.7M</b> views<small>Unique 3 · “Chuẩn vibe lịch lãm”</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/1746709779294375" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Unique for iPhone 17 · creator reel"><img src="assets/img/kr-2.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>1.8M</b> views<small>Unique for iPhone 17 · creator reel</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/792547346858997" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Sport X · “Bảo vệ chất, sống chất”"><img src="assets/img/kr-3.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>220K</b> views<small>Sport X · “Bảo vệ chất, sống chất”</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/935993481848490" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Unique 2 · with Cao Kim Chi"><img src="assets/img/kr-4.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>1.3K</b> reactions<small>Unique 2 · with Cao Kim Chi</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/1116647630193399" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Tết campaign · “Thay đổi nhỏ”"><img src="assets/img/kr-5.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>1.1K</b> reactions<small>Tết campaign · “Thay đổi nhỏ”</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/1862876117549202" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Sport · “Sống hết mình”"><img src="assets/img/kr-6.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>1K</b> reactions<small>Sport · “Sống hết mình”</small></span></a>
+      <a class="kr" href="https://www.facebook.com/reel/788715186929826" target="_blank" rel="noopener" aria-label="Watch the reel on Facebook: Unique 3 · “Khi ra đường”"><img src="assets/img/kr-7.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span><span class="t"><b>336</b> reactions<small>Unique 3 · “Khi ra đường”</small></span></a>
+    </div>
+      <div class="figcap"><span>KOC, PR &amp; creative reels · Slimcase Vietnam</span><span>Top reel 7.7M views · best ad ROAS 4.0+</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="shoot">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>Slimcase Photoshoot</h3>
+      <div class="meta"><span class="pill sm">Project lead</span><span class="pill sm">Slimcase</span><span class="pill sm">2024</span></div>
+      <h4>Challenge</h4>
+      <p>Lead a large shoot with models from I Am Model Search 2022 and a crew of more than 20.</p>
+      <h4>Strategy</h4>
+      <p>Three shoot concepts with clear storylines; shooting plan and call sheet; timeline, budget and resources; lead coordinator on set.</p>
+      <h4>Result</h4>
+      <p class="res">Shoot delivered on plan; final outputs reviewed for quality and consistency.</p>
+    </div>
+    <div class="board">
+      <div class="visual rv c4 ar" style="--ar:4/3"><img src="assets/img/shoot-bts.jpg" alt="Slimcase shoot crew and models in the studio" loading="lazy" decoding="async"></div>
+      <div class="c2 stack fill"><div class="visual rv ar" style="--ar:1"><img src="assets/img/uni4-2.jpg" alt="Studio shoot result" loading="lazy" decoding="async"></div><div class="visual rv ar" style="--ar:1"><img src="assets/img/spo1-3.jpg" alt="Sport X studio shoot result" loading="lazy" decoding="async"></div></div>
+      <div class="pair rv"><figure class="shot"><img src="assets/img/shoot-concept.jpg" alt="Unique 3 story concept moodboard: minimalism, high quality, documentary, stylish and comfort" loading="lazy" decoding="async"><figcaption>Story concept · Unique 3</figcaption></figure><figure class="shot"><img src="assets/img/shoot-callsheet.jpg" alt="Call sheet for the Unique 3 branding shoot, 29 October 2024 (phone numbers hidden)" loading="lazy" decoding="async"><figcaption>Call sheet · 29.10.2024</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide blue chapter" id="ch5">
+  <div class="wrap">
+    <div class="big rv"><span class="n">05</span><h2>CONTENT<br>CREATION</h2></div>
+    <div class="list rv">
+      <a class="pill" href="#posts">Social posts</a>
+      <a class="pill" href="#ai">AI creative production</a>
+      <a class="pill" href="#seo">SEO content</a>
+      <a class="pill" href="#pr">PR articles</a>
+      <a class="pill" href="#script">Script writing</a>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="posts">
+  <div class="wrap">
+    <div class="section-title rv"><h2>Social posts</h2><p>Concepts, copy and visual direction for brand pages across four industries, from launch posts to always-on content. Two of the strongest posts from each.</p></div>
+    <div class="sp-grid"><div class="sp"><div class="sp-h"><span class="pill sm">01 · Motorbike</span><b>Honda Việt Nam</b></div><div class="sp-posts"><a class="post" href="https://www.facebook.com/HondaVietnam/posts/pfbid0CQVGzHsA7yhVNb37T1NdLBQ7thH42gY6KXCUoN1TaY8vii8rV7HQYytXPW6Qz3P9l" target="_blank" rel="noopener" aria-label="Post on Facebook: Wave Alpha phiên bản cổ điển hoàn toàn mới: ngược dòng thời gian về với chiếc xe số huyền thoại"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>29 Sep 2023 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Wave Alpha phiên bản cổ điển hoàn toàn mới: ngược dòng thời gian về với chiếc xe số huyền thoại</span><span class="pm l1" style="aspect-ratio:1.000"><span class="pi"><img src="assets/img/wav8-1.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>10,109</b> reactions</span><span>497 comments</span><span>127 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/reel/1290146594914580" target="_blank" rel="noopener" aria-label="Reel on Facebook: HIEUTHUHAI bảo rằng nay anh ấy đã khác, vì…?"><span class="ph-h"><span class="av" style="--c:#b3242b">H</span><span class="who"><b>Honda Việt Nam</b><small>Dec 2022 · Facebook reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">HIEUTHUHAI bảo rằng nay anh ấy đã khác, vì…?</span><span class="pm l1" style="aspect-ratio:1.780"><span class="pi"><img src="assets/img/var0-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span><b>10K</b> reactions</span><span>991 comments</span><span>299 shares</span></span></a></div></div><div class="sp"><div class="sp-h"><span class="pill sm">02 · F&amp;B</span><b>P'ti Saigon · Le Corto</b></div><div class="sp-posts"><a class="post" href="https://www.facebook.com/ptisaigon/posts/pfbid0q1eExpwtETtAukDu8qkGPzyG71snFL8MSdwF2k6WvDJB7nuBRcraUyqHarNnGEYQl" target="_blank" rel="noopener" aria-label="Post on Facebook: P&#x27;ti Saigon"><span class="ph-h"><span class="av" style="--c:#b0803f">P</span><span class="who"><b>P&#x27;ti Saigon</b><small>Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap"></span><span class="pm l1" style="aspect-ratio:0.997"><span class="pi"><img src="assets/img/fnb-pti.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span>Post on Facebook</span></span></a>
+<a class="post" href="https://www.facebook.com/LeCorto/posts/pfbid0THuQK45ZVMhXNxoBN1unxvJhPYoYLKftirsoZ6ngctd8GYSEftuKK5BR7S9LALyMl" target="_blank" rel="noopener" aria-label="Post on Facebook: Le Corto"><span class="ph-h"><span class="av" style="--c:#2f3b2c">L</span><span class="who"><b>Le Corto</b><small>Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap"></span><span class="pm l1" style="aspect-ratio:1.003"><span class="pi"><img src="assets/img/fnb-lecorto.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span>Post on Facebook</span></span></a></div></div><div class="sp"><div class="sp-h"><span class="pill sm">03 · Tech accessories</span><b>Slimcase</b></div><div class="sp-posts"><a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid0J5eWm8dtE8aExCXTMTEQUp9cdZPmn595MayLwwtoyQ8eCQMUwxri512cRo5JaK96l" target="_blank" rel="noopener" aria-label="Post on Facebook: Chính thức ra mắt Slimcase Unique dành cho iPhone 17 Pro &amp; Pro Max"><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>18 Sep 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Chính thức ra mắt Slimcase Unique dành cho iPhone 17 Pro &amp; Pro Max</span><span class="pm lv" style="grid-template-columns:0.666fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.000"><span class="pi"><img src="assets/img/uni1-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni1-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni1-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni1-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>1.3K</b> reactions</span><span>1.3K comments</span><span>43 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/slimcase.vn/posts/pfbid02jDAUmUnnyYkhLQLPdsPB4Mk7D8HmL3DnCqpcp3x3hXVhsPjhkmXBapuyGZYnoPgHl" target="_blank" rel="noopener" aria-label="Post on Facebook: Mỗi chi tiết là một dấu ấn."><span class="ph-h"><span class="av" style="--c:#1c2836">S</span><span class="who"><b>Slimcase Vietnam</b><small>7 Nov 2025 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Mỗi chi tiết là một dấu ấn.</span><span class="pm lg" style="aspect-ratio:1"><span class="pi"><img src="assets/img/uni3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/uni3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>834</b> reactions</span><span>342 comments</span><span>21 shares</span></span></a></div></div><div class="sp"><div class="sp-h"><span class="pill sm">04 · Fashion &amp; sport</span><b>Beyono</b></div><div class="sp-posts"><a class="post" href="https://www.facebook.com/reel/358283180580629" target="_blank" rel="noopener" aria-label="Reel on Facebook: Quản Trọng Nghĩa × Beyono: đam mê mãnh liệt, khát khao truyền cảm hứng"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>May 2024 · Facebook reel</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">Quản Trọng Nghĩa × Beyono: đam mê mãnh liệt, khát khao truyền cảm hứng</span><span class="pm l1" style="aspect-ratio:0.800"><span class="pi"><img src="assets/img/sky2-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></span><span class="pf"><span><b>381</b> reactions</span><span>13 shares</span></span></a>
+<a class="post" href="https://www.facebook.com/BeyonobrandVietNam/posts/pfbid0xevgLDmzeT4MaaSn6y4w73kXj63iri35qk2Ch7oVr3Kk8qMiTnEMhnaMizkeXULXl" target="_blank" rel="noopener" aria-label="Post on Facebook: SKY WHITE – Khơi dậy đam mê, tự tin quyết đấu"><span class="ph-h"><span class="av" style="--c:#c8202a">B</span><span class="who"><b>Beyono Việt Nam</b><small>16 May 2024 · Facebook post</small></span><span class="go" aria-hidden="true">↗</span></span><span class="cap">SKY WHITE – Khơi dậy đam mê, tự tin quyết đấu</span><span class="pm lv" style="grid-template-columns:0.670fr 0.333fr;grid-template-rows:repeat(3,1fr);aspect-ratio:1.003"><span class="pi"><img src="assets/img/sky3-1.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky3-2.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky3-3.jpg" alt="" loading="lazy" decoding="async"></span><span class="pi"><img src="assets/img/sky3-4.jpg" alt="" loading="lazy" decoding="async"></span></span><span class="pf"><span><b>254</b> reactions</span><span>18 comments</span></span></a></div></div></div>
+  </div>
+</section>
+
+<section class="project flip" id="ai">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>AI Creative Production</h3>
+      <div class="meta"><span class="pill sm">AI video ads</span><span class="pill sm">Crossian</span><span class="pill sm">2026</span></div>
+      <h4>Challenge</h4>
+      <p>Release enough fresh ad creatives every week to keep testing, without a bigger team or budget.</p>
+      <h4>Strategy</h4>
+      <p>Applied AI across the creative workflow: analysing current creatives to find what wins, optimising existing ad videos, then generating and editing rough cuts of full 30–45s ad videos.</p>
+      <h4>Result</h4>
+      <p class="res">2× creative release output (creatives per week).</p>
+      <div class="flow rv" style="margin-top:18px"><div class="step"><b>Analyse</b>Current creatives &amp; winners</div><div class="step"><b>Optimise</b>Hooks, pacing, offers</div><div class="step"><b>Generate</b>Scenes &amp; shots with AI</div><div class="step"><b>Edit</b>30–45s rough cut</div></div>
+    </div>
+    <div class="board">
+      <div class="vwall six rv"><figure class="vid" tabindex="0" role="button" aria-label="Play RevenaShape ad with sound"><video src="assets/media/crossian-ad-1.mp4" poster="assets/img/crossian-ad-1.jpg" muted loop playsinline preload="none"></video><figcaption><span>RevenaShape</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play RevenaShape ad with sound"><video src="assets/media/crossian-ad-2.mp4" poster="assets/img/crossian-ad-2.jpg" muted loop playsinline preload="none"></video><figcaption><span>RevenaShape</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play RevenaShape ad with sound"><video src="assets/media/crossian-ad-3.mp4" poster="assets/img/crossian-ad-3.jpg" muted loop playsinline preload="none"></video><figcaption><span>RevenaShape</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play CraftyHold ad with sound"><video src="assets/media/crossian-ad-4.mp4" poster="assets/img/crossian-ad-4.jpg" muted loop playsinline preload="none"></video><figcaption><span>CraftyHold</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play CraftyHold ad with sound"><video src="assets/media/crossian-ad-5.mp4" poster="assets/img/crossian-ad-5.jpg" muted loop playsinline preload="none"></video><figcaption><span>CraftyHold</span><span class="snd"></span></figcaption></figure><figure class="vid" tabindex="0" role="button" aria-label="Play CraftyHold ad with sound"><video src="assets/media/crossian-ad-6.mp4" poster="assets/img/crossian-ad-6.jpg" muted loop playsinline preload="none"></video><figcaption><span>CraftyHold</span><span class="snd"></span></figcaption></figure></div>
+      <div class="figcap"><span>RevenaShape · CraftyHold · AI video ads</span><span>Tap a video for sound</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="seo">
+  <div class="wrap grid">
+    <div class="info rv">
+      <h3>SEO Content</h3>
+      <div class="meta"><span class="pill sm">SEO</span><span class="pill sm">Renn Labs · CAPQ.AI · Skyfarm</span><span class="pill sm">2021–2025</span></div>
+      <h4>Renn Labs · CAPQ.AI (US)</h4>
+      <ul><li>Competitor and audience research, on-page SEO and technical audits.</li><li>Pillar–cluster articles for the alternative investment niche, matched to investor search intent.</li></ul>
+      <h4>Skyfarm (Vietnam)</h4>
+      <p>Agri-tech blog content that ranked on Google's first page for high-intent keywords.</p>
+      <a class="pill go-ext" href="https://capq.ai/insights" target="_blank" rel="noopener">Read the CAPQ.AI blog ↗</a>
+    </div>
+    <div class="board">
+      <div class="kpis rv"><div class="card kpi"><div class="v">+15%</div><div class="d">Organic traffic · Renn Labs</div></div><div class="card kpi"><div class="v">+10%</div><div class="d">CTR · Renn Labs</div></div><div class="card kpi"><div class="v">83+</div><div class="d">RankMath score / 100 · CAPQ.AI</div></div></div>
+      <a class="browser rv c3" href="https://capq.ai/insights" target="_blank" rel="noopener"><span class="bar"><i></i><i></i><i></i><span>capq.ai/insights</span></span><img src="assets/img/capq-articles.jpg" alt="CAPQ.AI insights blog: article grid" loading="lazy" decoding="async"></a>
+      <div class="rank rv c3">
+        <a class="r" href="https://skyfarm.vn/nguyen-nhan-gay-ra-thoi-re-o-cay-thuy-canh-va-cach-phong-chong-khac-phuc-hieu-qua.html" target="_blank" rel="noopener"><img class="th" src="assets/img/seo-hydro.jpg" alt="" loading="lazy" decoding="async"><span class="pos">#1</span><div><div class="kw">“thối rễ cây thuỷ canh”</div><div class="tt">Root rot in hydroponic plants: causes and fixes ↗</div></div></a>
+        <a class="r" href="https://skyfarm.vn/chi-phi-trong-1000m2-dua-luoi-la-bao-nhieu.html" target="_blank" rel="noopener"><img class="th" src="assets/img/seo-melon.jpg" alt="" loading="lazy" decoding="async"><span class="pos">#3</span><div><div class="kw">“chi phí trồng dưa lưới”</div><div class="tt">What 1,000 m² of greenhouse melon really costs ↗</div></div></a>
+        <a class="r" href="https://skyfarm.vn/cac-loai-benh-o-dua-luoi.html" target="_blank" rel="noopener"><img class="th" src="assets/img/seo-cucumber.jpg" alt="" loading="lazy" decoding="async"><span class="pos">#4</span><div><div class="kw">“trồng dưa leo baby ngọt”</div><div class="tt">Plus: common melon diseases and how to treat them ↗</div></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide blue" id="pr">
+  <div class="wrap">
+    <div class="section-title rv"><h2>PR articles</h2><p>Brand stories placed in national news and business media: written to read as editorial while carrying the brand's key message.</p></div>
+    <div class="tcards"><article class="card tcard rv"><a class="thumb" href="https://cafebiz.vn/bung-no-huong-vi-moi-la-voi-thuong-hieu-banh-quy-ban-chay-nhat-nhat-ban-17622122216170834.chn" target="_blank" rel="noopener" aria-label="Read the Country Ma'am article"><img src="assets/img/pr-cafebiz.jpg" alt="" loading="lazy" decoding="async"></a><span class="label">CafeBiz · Dec 2022</span><h3>Country Ma'am</h3><p class="hl">“Bùng nổ hương vị mới lạ với thương hiệu bánh quy bán chạy nhất Nhật Bản”</p><p class="sm">Market launch of Japan’s best-selling cookie brand in Vietnam.</p><a class="lnk" href="https://cafebiz.vn/bung-no-huong-vi-moi-la-voi-thuong-hieu-banh-quy-ban-chay-nhat-nhat-ban-17622122216170834.chn" target="_blank" rel="noopener">Read the article ↗</a></article><article class="card tcard rv"><a class="thumb" href="https://kenh14.vn/luot-vision-nhap-hoc-nhan-qua-chat-nhat-truong-20221021164542113.chn" target="_blank" rel="noopener" aria-label="Read the Honda Vision article"><img src="assets/img/pr-kenh14.jpg" alt="" loading="lazy" decoding="async"></a><span class="label">Kenh14 · Oct 2022</span><h3>Honda Vision</h3><p class="hl">“Lướt Vision nhập học, nhận quà chất nhất trường”</p><p class="sm">Back-to-school promotion for Honda Vision, written for a student audience.</p><a class="lnk" href="https://kenh14.vn/luot-vision-nhap-hoc-nhan-qua-chat-nhat-truong-20221021164542113.chn" target="_blank" rel="noopener">Read the article ↗</a></article><article class="card tcard rv"><a class="thumb" href="https://tienphong.vn/mot-thuong-hieu-op-lung-tao-khac-biet-nho-rd-khong-chay-theo-xu-huong-thi-truong-post1773545.tpo" target="_blank" rel="noopener" aria-label="Read the Slimcase article"><img src="assets/img/pr-tienphong.jpg" alt="" loading="lazy" decoding="async"></a><span class="label">Tiền Phong · Aug 2025</span><h3>Slimcase</h3><p class="hl">“Một thương hiệu ốp lưng tạo khác biệt nhờ R&amp;D, không chạy theo xu hướng thị trường”</p><p class="sm">Brand story: R&amp;D over trends and flash sales.</p><a class="lnk" href="https://tienphong.vn/mot-thuong-hieu-op-lung-tao-khac-biet-nho-rd-khong-chay-theo-xu-huong-thi-truong-post1773545.tpo" target="_blank" rel="noopener">Read the article ↗</a></article></div>
+  </div>
+</section>
+
+<section class="slide" id="script">
+  <div class="wrap">
+    <div class="section-title rv"><h2>Script writing</h2><p>Outside of marketing, I write for the screen: concepts, full scripts and shot lists, plus support on set.</p></div>
+    <div class="tcards"><article class="card tcard rv"><a class="thumb" href="https://www.youtube.com/watch?v=ysC3_0nZPPk" target="_blank" rel="noopener" aria-label="Watch Về Quê Có Gì Vui"><img src="assets/img/yt-vequecogivui.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></a><span class="label">Tet short film · 2025</span><h3>“Về Quê Có Gì Vui”</h3><p class="sm">Duy Khánh's Lunar New Year film with well-known Vietnamese artists. Co-wrote three scenes with the production team.</p><div class="kpi" style="padding:14px 0 0"><div class="v">2.8M</div><div class="d">YouTube views</div></div></article><article class="card tcard rv"><a class="thumb" href="https://www.youtube.com/watch?v=BIuxNujc0lo" target="_blank" rel="noopener" aria-label="Watch Điều Chưa Nói"><img src="assets/img/yt-dieuchuanoi.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></a><span class="label">Music video · 2021</span><h3>“Điều Chưa Nói”</h3><p class="sm">With Winno, Linh Cáo, Quỳnh Lương and Vũ Khang. Lead screenwriter: concept, full script, shot list.</p><div class="kpi" style="padding:14px 0 0"><div class="v">13.3K</div><div class="d">YouTube views</div></div></article><article class="card tcard rv"><a class="thumb" href="https://www.facebook.com/reel/472771654621927" target="_blank" rel="noopener" aria-label="Watch Tích Cực"><img src="assets/img/yt-tichcuc.jpg" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"></span></a><span class="label">Let's On Air 2022</span><h3>“Tích Cực”</h3><p class="sm">Short film screened at the finale and awards night. Full script and shot list; support on set.</p><div class="kpi" style="padding:14px 0 0"><div class="v">19K+</div><div class="d">Facebook views</div></div></article></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="slide blue" id="skills">
+  <div class="wrap">
+    <div class="section-title rv"><h2>Skills &amp; certifications</h2><p>Full work history is in the CV.</p></div>
+    <div class="two">
+      <div class="card rv">
+        <h3>Education</h3>
+        <p style="font-weight:600">Bachelor's in International Business</p>
+        <p style="font-size:.86rem;color:var(--muted)">University of Economics HCMC (UEH) · 2020 – 2023 · GPA 3.5/4.0</p>
+        <h3 style="margin-top:20px">Recognition</h3>
+        <ul class="dots">
+          <li>Head of Communications, Youth+ Community Vietnam (2021–2022)</li>
+          <li>Distinction Scholarship, UEH (2021) · Power On Scholarship (2020–2024)</li>
+          <li>Ranked 1st in data analysis course output (SQL, Power BI)</li>
+        </ul>
+      </div>
+      <div class="card rv">
+        <h3>Certifications &amp; languages</h3>
+        <div class="cert-row"><b>Language</b><span>IELTS 7.0 – British Council, Dec 2025</span></div>
+        <div class="cert-row"><b>Business analysis</b><span>IT Business Analyst – BeBA Academy</span></div>
+        <div class="cert-row"><b>Data</b><span>Microsoft Power BI · Azure Data Fundamentals</span></div>
+        <div class="cert-row"><b>Technical</b><span>Querying Data with Microsoft Transact-SQL</span></div>
+        <div class="cert-row"><b>Other</b><span>IC3 Digital Literacy</span></div>
+        <button class="pill deckbtn" data-g="certs" style="margin-top:16px">View certificates <i></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THANK YOU ============ -->
+<section class="slide brown thanks" id="contact">
+  <svg class="swirl" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" style="inset:0;width:100%;height:100%;opacity:.07" aria-hidden="true">
+    <path d="M-80 200 C 200 400, 400 -40, 640 260 S 1000 700, 1280 480" stroke="#b2d4dd" stroke-width="120"/>
+  </svg>
+  <div class="wrap">
+    <p class="pre rv">There's still so much to create, launch and grow.<br>Let's do it together!</p>
+    <h2 class="rv">Thank You</h2>
+    <div class="links rv">
+      <a href="mailto:anhdtv.02@gmail.com"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>anhdtv.02@gmail.com</a>
+      <a href="https://linkedin.com/in/dinhthuyvananh" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z"/></svg></span>dinhthuyvananh</a>
+      <a href="tel:+84775668123"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>+84 775 668 123</a>
+    </div>
+    <a class="btn rv" href="assets/CV_Dinh_Thuy_Van_Anh.pdf" download>Download CV ↓</a>
+  </div>
+</section>
+<footer>© 2026 Emma Dinh · Ho Chi Minh City, Vietnam</footer>
+
+<script>
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+// nav show after hero + active link
+const nav = document.getElementById('nav');
+const hero = document.getElementById('top');
+new IntersectionObserver(([e]) => nav.classList.toggle('show', !e.isIntersecting), { threshold: .15 }).observe(hero);
+const links = [...nav.querySelectorAll('ul a')];
+const map = { about:'about', highlights:'highlights', work:'work', ch1:'work', ch2:'work', ch3:'work', ch4:'work', ch5:'work', skills:'skills', crossian:'work', 'crossian-ads':'work', gtm:'work', contact:'contact' };
+const so = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const key = map[e.target.id]; if (!key) return;
+  links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + key));
+}), { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('section[id]').forEach(s => so.observe(s));
+// "as published" strip arrows
+document.querySelectorAll('.proof').forEach(p => { const st = p.querySelector('.posts');
+  p.querySelectorAll('.hint button').forEach(b => b.addEventListener('click', () => st.scrollBy({ left: +b.dataset.dir * st.clientWidth * .8, behavior: 'smooth' }))); });
+// video ads: play on screen, tap for sound
+const vids = [...document.querySelectorAll('.vid video')];
+const vio = new IntersectionObserver(es => es.forEach(e => { const v = e.target; if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause(); }), { threshold: .35 });
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) vids.forEach(v => vio.observe(v));
+const toggleSound = f => { const v = f.querySelector('video'), was = f.classList.contains('on');
+  vids.forEach(o => { o.muted = true; o.closest('.vid').classList.remove('on'); });
+  if (!was) { v.muted = false; v.play().catch(() => {}); f.classList.add('on'); } };
+document.querySelectorAll('.vid').forEach(f => { f.addEventListener('click', () => toggleSound(f));
+  f.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSound(f); } }); });
+// image viewer (dashboards, certificates)
+const G = { crossiandata: { t: 'Crossian · performance tracking', s: ['img/crossian-dash-1', 'img/crossian-dash-2'] }, certs: { t: 'Certificates', s: ['img/cert-ba', 'img/canva-certs'] } };
+document.querySelectorAll('.deckbtn[data-g] i').forEach(i => { const g = G[i.closest('.deckbtn').dataset.g]; if (g) i.textContent = g.s.length + ' pages'; });
+const lb = document.createElement('div'); lb.className = 'lb'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-modal', 'true');
+lb.innerHTML = '<header><span class="t"></span><span class="n"></span><button class="x" type="button">Close ✕</button></header><figure><img alt=""></figure><button class="nav prev" type="button" aria-label="Previous">←</button><button class="nav next" type="button" aria-label="Next">→</button>';
+document.body.append(lb);
+const lbI = lb.querySelector('figure img'), lbT = lb.querySelector('.t'), lbN = lb.querySelector('.n'), lbX = lb.querySelector('.x');
+let cur = null, idx = 0, opener = null;
+const show = i => { const s = G[cur].s; idx = (i + s.length) % s.length; lbI.src = `assets/${s[idx]}.jpg`; lbI.alt = `${G[cur].t}, page ${idx + 1}`; lbN.textContent = `${idx + 1} / ${s.length}`; };
+const open = k => { cur = k; opener = document.activeElement; lbT.textContent = G[k].t; show(0); lb.classList.add('open'); document.documentElement.style.overflow = 'hidden'; lbX.focus(); };
+const close = () => { lb.classList.remove('open'); document.documentElement.style.overflow = ''; cur = null; if (opener) opener.focus(); };
+document.querySelectorAll('.deckbtn[data-g]').forEach(b => b.addEventListener('click', () => open(b.dataset.g)));
+lbX.addEventListener('click', close);
+lb.querySelector('.prev').addEventListener('click', () => show(idx - 1));
+lb.querySelector('.next').addEventListener('click', () => show(idx + 1));
+lb.querySelector('figure').addEventListener('click', e => { if (e.target.tagName !== 'IMG') close(); });
+addEventListener('keydown', e => { if (!cur) return; if (e.key === 'Escape') close(); else if (e.key === 'ArrowRight') show(idx + 1); else if (e.key === 'ArrowLeft') show(idx - 1);
+  else if (e.key === 'Tab') { const f = [...lb.querySelectorAll('button')]; const i = f.indexOf(document.activeElement); e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus(); } });
+// safety net: anything already scrolled past is shown
+addEventListener('scroll', () => document.querySelectorAll('.rv:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight * .9) el.classList.add('in'); }), { passive: true });
+
+</script>
+</body>
+</html>
